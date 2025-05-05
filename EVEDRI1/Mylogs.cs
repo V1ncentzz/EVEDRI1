@@ -15,7 +15,7 @@ namespace EVEDRI1
         Workbook workbook = new Workbook();
         public void insertlog(string user, string message)
         {
-            workbook.LoadFromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx"); //File location
+            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //File location
             Worksheet sheet = workbook.Worksheets[1];
             int row = sheet.Rows.Length +1;
             sheet.Range[row, 1].Value = user;
@@ -23,11 +23,11 @@ namespace EVEDRI1
             sheet.Range[row, 3].Value = DateTime.Now.ToString("MM/dd/yyyy");
             sheet.Range[row, 4].Value = DateTime.Now.ToString("HH:mm:ss tt");
             //MessageBox.Show(DateTime.Now.ToString("hh:mm:ss tt"));
-            workbook.SaveToFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx", ExcelVersion.Version2016);
+            workbook.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
         }
         public void showlogs( DataGridView v)
         {
-            workbook.LoadFromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx"); //File location
+            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //File location
             Worksheet worksheet = workbook.Worksheets[1];
             DataTable dt = worksheet.ExportDataTable();
             v.DataSource = dt;

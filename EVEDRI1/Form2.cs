@@ -28,7 +28,7 @@ namespace EVEDRI1
         
         public void LoadExcelFile()
         { 
-            book.LoadFromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx"); //Change file location
+            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
             Worksheet sheet = book.Worksheets[0];
             DataTable dt = sheet.ExportDataTable();
             dataGridView1.DataSource = dt;
@@ -36,7 +36,7 @@ namespace EVEDRI1
         
         public void ShowStudents(string status)
         {
-            book.LoadFromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx");
+            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
             Worksheet worksheet = book.Worksheets[0];
             DataTable dt = worksheet.ExportDataTable();
             //DataRow[] rows = dt.Select("Status=" + status);
@@ -96,27 +96,7 @@ namespace EVEDRI1
             bs.Filter = $"Name LIKE '{filterVal}%'";
             dataGridView1.DataSource = bs;
 
-            //string searchVal = txtSearch.Text;
-
-            //foreach (DataGridViewRow row in dataGridView1.Rows)
-            //{
-            //    if (!row.IsNewRow && row.Cells[0].Value != null)
-            //    {
-            //        string name = row.Cells[0].Value.ToString();
-            //        row.Visible = name.StartsWith(searchVal, StringComparison.OrdinalIgnoreCase);
-            //    }
-            //}
-
-            //string searchVal = txtSearch.Text;
-
-            //foreach (DataGridViewRow row in dataGridView1.Rows)
-            //{
-            //    if (row.Cells[0].Value != null)
-            //    {
-            //        string name = row.Cells[0].Value.ToString();
-            //        row.Visible = Name.StartsWith(searchVal, StringComparison.OrdinalIgnoreCase);
-            //    }
-            //}
+           
         }
 
         private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -231,6 +211,19 @@ namespace EVEDRI1
         private void btnClosewindow_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnDeteteRow_Click(object sender, EventArgs e)
+        {
+            Worksheet sheet = book.Worksheets[0];
+            DataTable dt = sheet.ExportDataTable();
+            dataGridView1.DataSource = dt;
+            int row = sheet.Rows.Length;
+            sheet.DeleteRow(row);
+            //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            //{
+            //    dataGridView1.Rows.Remove(row);
+            //}
         }
     }
 }

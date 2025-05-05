@@ -63,7 +63,6 @@
             this.lblActivestudentsCount = new System.Windows.Forms.Label();
             this.lblActivestudents = new System.Windows.Forms.Label();
             this.Sidebartranstion = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.lblBadmintonCount = new System.Windows.Forms.Label();
             this.lblBadminton = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,55 +72,55 @@
             this.lblUserfulname = new System.Windows.Forms.Label();
             this.pnlsettings = new System.Windows.Forms.FlowLayoutPanel();
             this.btnCLose = new Guna.UI2.WinForms.Guna2Button();
-            this.btnCamera = new Guna.UI2.WinForms.Guna2Button();
             this.btnfromafile = new Guna.UI2.WinForms.Guna2Button();
             this.txtPicture = new System.Windows.Forms.TextBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClosewindow = new System.Windows.Forms.PictureBox();
             this.btnMaximize = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnAddstudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnActivestudent = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnInactivestudent = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnLogs = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.picUser = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnUpload = new Guna.UI2.WinForms.Guna2Button();
+            this.picUser = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
             this.pnlsettings.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
-            this.guna2GradientPanel3.SuspendLayout();
-            this.guna2GradientPanel4.SuspendLayout();
-            this.guna2GradientPanel5.SuspendLayout();
-            this.guna2GradientPanel6.SuspendLayout();
-            this.guna2GradientPanel7.SuspendLayout();
-            this.guna2GradientPanel8.SuspendLayout();
             this.guna2GradientPanel9.SuspendLayout();
-            this.guna2GradientPanel10.SuspendLayout();
+            this.guna2GradientPanel8.SuspendLayout();
+            this.guna2GradientPanel7.SuspendLayout();
+            this.guna2GradientPanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.guna2GradientPanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.guna2GradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            this.guna2GradientPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblRedCount
@@ -464,19 +463,6 @@
             // 
             this.Sidebartranstion.Interval = 10;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(37, 116);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 64);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Create Student";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // lblBadmintonCount
             // 
             this.lblBadmintonCount.AutoSize = true;
@@ -554,11 +540,10 @@
             // 
             this.pnlsettings.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnlsettings.Controls.Add(this.btnCLose);
-            this.pnlsettings.Controls.Add(this.btnCamera);
             this.pnlsettings.Controls.Add(this.btnfromafile);
-            this.pnlsettings.Location = new System.Drawing.Point(216, 16);
+            this.pnlsettings.Location = new System.Drawing.Point(23, 19);
             this.pnlsettings.Name = "pnlsettings";
-            this.pnlsettings.Size = new System.Drawing.Size(149, 118);
+            this.pnlsettings.Size = new System.Drawing.Size(172, 104);
             this.pnlsettings.TabIndex = 6;
             // 
             // btnCLose
@@ -567,6 +552,7 @@
             this.btnCLose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnCLose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnCLose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCLose.FillColor = System.Drawing.Color.Crimson;
             this.btnCLose.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCLose.ForeColor = System.Drawing.Color.White;
             this.btnCLose.Location = new System.Drawing.Point(3, 3);
@@ -576,34 +562,18 @@
             this.btnCLose.Text = "X";
             this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
             // 
-            // btnCamera
-            // 
-            this.btnCamera.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCamera.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCamera.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCamera.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCamera.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnCamera.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCamera.ForeColor = System.Drawing.Color.White;
-            this.btnCamera.Location = new System.Drawing.Point(3, 29);
-            this.btnCamera.Name = "btnCamera";
-            this.btnCamera.Size = new System.Drawing.Size(142, 35);
-            this.btnCamera.TabIndex = 8;
-            this.btnCamera.Text = "Camera";
-            this.btnCamera.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
             // btnfromafile
             // 
             this.btnfromafile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnfromafile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnfromafile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnfromafile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnfromafile.FillColor = System.Drawing.Color.SteelBlue;
-            this.btnfromafile.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnfromafile.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btnfromafile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnfromafile.ForeColor = System.Drawing.Color.White;
-            this.btnfromafile.Location = new System.Drawing.Point(3, 70);
+            this.btnfromafile.Location = new System.Drawing.Point(3, 29);
             this.btnfromafile.Name = "btnfromafile";
-            this.btnfromafile.Size = new System.Drawing.Size(142, 35);
+            this.btnfromafile.Size = new System.Drawing.Size(169, 48);
             this.btnfromafile.TabIndex = 7;
             this.btnfromafile.Text = "Upload file";
             this.btnfromafile.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -642,91 +612,47 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1388, 867);
             this.guna2GradientPanel1.TabIndex = 17;
             // 
-            // guna2GradientPanel2
+            // guna2GradientPanel9
             // 
-            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel2.BorderRadius = 30;
-            this.guna2GradientPanel2.Controls.Add(this.btnActivestudent);
-            this.guna2GradientPanel2.Controls.Add(this.btnInactivestudent);
-            this.guna2GradientPanel2.Controls.Add(this.btnLogs);
-            this.guna2GradientPanel2.Controls.Add(this.picUser);
-            this.guna2GradientPanel2.Controls.Add(this.lblUserfulname);
-            this.guna2GradientPanel2.Controls.Add(this.txtPicture);
-            this.guna2GradientPanel2.Controls.Add(this.pnlsettings);
-            this.guna2GradientPanel2.Controls.Add(this.btnUpload);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(11, 14);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(282, 623);
-            this.guna2GradientPanel2.TabIndex = 18;
+            this.guna2GradientPanel9.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel9.BorderRadius = 30;
+            this.guna2GradientPanel9.BorderThickness = 5;
+            this.guna2GradientPanel9.Controls.Add(this.lblRedCount);
+            this.guna2GradientPanel9.Controls.Add(this.label6);
+            this.guna2GradientPanel9.Controls.Add(this.lblOrange);
+            this.guna2GradientPanel9.Controls.Add(this.lblRed);
+            this.guna2GradientPanel9.Controls.Add(this.lblYellowCount);
+            this.guna2GradientPanel9.Controls.Add(this.lblOrangeCount);
+            this.guna2GradientPanel9.Controls.Add(this.lblBlue);
+            this.guna2GradientPanel9.Controls.Add(this.lblYellow);
+            this.guna2GradientPanel9.Controls.Add(this.lblBlueCount);
+            this.guna2GradientPanel9.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.Lavender;
+            this.guna2GradientPanel9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(45, 622);
+            this.guna2GradientPanel9.Name = "guna2GradientPanel9";
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(665, 215);
+            this.guna2GradientPanel9.TabIndex = 18;
             // 
-            // guna2GradientPanel3
+            // guna2GradientPanel8
             // 
-            this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel3.Controls.Add(this.guna2GradientPanel1);
-            this.guna2GradientPanel3.Controls.Add(this.guna2GradientPanel2);
-            this.guna2GradientPanel3.Controls.Add(this.btnLogout);
-            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel3.FillColor = System.Drawing.Color.GhostWhite;
-            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
-            this.guna2GradientPanel3.Size = new System.Drawing.Size(1697, 891);
-            this.guna2GradientPanel3.TabIndex = 19;
-            // 
-            // guna2GradientPanel4
-            // 
-            this.guna2GradientPanel4.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel4.BorderRadius = 30;
-            this.guna2GradientPanel4.BorderThickness = 5;
-            this.guna2GradientPanel4.Controls.Add(this.pictureBox1);
-            this.guna2GradientPanel4.Controls.Add(this.lblActivestudents);
-            this.guna2GradientPanel4.Controls.Add(this.lblActivestudentsCount);
-            this.guna2GradientPanel4.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.Lavender;
-            this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel4.Location = new System.Drawing.Point(45, 118);
-            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
-            this.guna2GradientPanel4.Size = new System.Drawing.Size(389, 215);
-            this.guna2GradientPanel4.TabIndex = 17;
-            // 
-            // guna2GradientPanel5
-            // 
-            this.guna2GradientPanel5.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel5.BorderRadius = 30;
-            this.guna2GradientPanel5.BorderThickness = 5;
-            this.guna2GradientPanel5.Controls.Add(this.pictureBox2);
-            this.guna2GradientPanel5.Controls.Add(this.lblInactivestudents);
-            this.guna2GradientPanel5.Controls.Add(this.lblInactivestudentscount);
-            this.guna2GradientPanel5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Lavender;
-            this.guna2GradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(444, 118);
-            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(389, 215);
-            this.guna2GradientPanel5.TabIndex = 18;
-            // 
-            // guna2GradientPanel6
-            // 
-            this.guna2GradientPanel6.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel6.BorderRadius = 30;
-            this.guna2GradientPanel6.BorderThickness = 5;
-            this.guna2GradientPanel6.Controls.Add(this.pictureBox4);
-            this.guna2GradientPanel6.Controls.Add(this.pictureBox3);
-            this.guna2GradientPanel6.Controls.Add(this.label3);
-            this.guna2GradientPanel6.Controls.Add(this.lblFemale);
-            this.guna2GradientPanel6.Controls.Add(this.lblFemaleCount);
-            this.guna2GradientPanel6.Controls.Add(this.lblMaleCount);
-            this.guna2GradientPanel6.Controls.Add(this.lblMale);
-            this.guna2GradientPanel6.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Lavender;
-            this.guna2GradientPanel6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel6.Location = new System.Drawing.Point(857, 118);
-            this.guna2GradientPanel6.Name = "guna2GradientPanel6";
-            this.guna2GradientPanel6.Size = new System.Drawing.Size(434, 215);
-            this.guna2GradientPanel6.TabIndex = 19;
+            this.guna2GradientPanel8.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel8.BorderRadius = 30;
+            this.guna2GradientPanel8.BorderThickness = 5;
+            this.guna2GradientPanel8.Controls.Add(this.lblBstmCount);
+            this.guna2GradientPanel8.Controls.Add(this.lblBstm);
+            this.guna2GradientPanel8.Controls.Add(this.lblBeedCount);
+            this.guna2GradientPanel8.Controls.Add(this.lblBsitCount);
+            this.guna2GradientPanel8.Controls.Add(this.lblBeed);
+            this.guna2GradientPanel8.Controls.Add(this.lblBsit);
+            this.guna2GradientPanel8.Controls.Add(this.label4);
+            this.guna2GradientPanel8.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.Lavender;
+            this.guna2GradientPanel8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(732, 351);
+            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(402, 243);
+            this.guna2GradientPanel8.TabIndex = 18;
             // 
             // guna2GradientPanel7
             // 
@@ -754,98 +680,25 @@
             this.guna2GradientPanel7.Size = new System.Drawing.Size(665, 243);
             this.guna2GradientPanel7.TabIndex = 18;
             // 
-            // guna2GradientPanel8
+            // guna2GradientPanel6
             // 
-            this.guna2GradientPanel8.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel8.BorderRadius = 30;
-            this.guna2GradientPanel8.BorderThickness = 5;
-            this.guna2GradientPanel8.Controls.Add(this.lblBstmCount);
-            this.guna2GradientPanel8.Controls.Add(this.lblBstm);
-            this.guna2GradientPanel8.Controls.Add(this.lblBeedCount);
-            this.guna2GradientPanel8.Controls.Add(this.lblBsitCount);
-            this.guna2GradientPanel8.Controls.Add(this.lblBeed);
-            this.guna2GradientPanel8.Controls.Add(this.lblBsit);
-            this.guna2GradientPanel8.Controls.Add(this.label4);
-            this.guna2GradientPanel8.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.Lavender;
-            this.guna2GradientPanel8.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel8.Location = new System.Drawing.Point(732, 351);
-            this.guna2GradientPanel8.Name = "guna2GradientPanel8";
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(402, 243);
-            this.guna2GradientPanel8.TabIndex = 18;
-            // 
-            // guna2GradientPanel9
-            // 
-            this.guna2GradientPanel9.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel9.BorderRadius = 30;
-            this.guna2GradientPanel9.BorderThickness = 5;
-            this.guna2GradientPanel9.Controls.Add(this.lblRedCount);
-            this.guna2GradientPanel9.Controls.Add(this.label6);
-            this.guna2GradientPanel9.Controls.Add(this.lblOrange);
-            this.guna2GradientPanel9.Controls.Add(this.lblRed);
-            this.guna2GradientPanel9.Controls.Add(this.lblYellowCount);
-            this.guna2GradientPanel9.Controls.Add(this.lblOrangeCount);
-            this.guna2GradientPanel9.Controls.Add(this.lblBlue);
-            this.guna2GradientPanel9.Controls.Add(this.lblYellow);
-            this.guna2GradientPanel9.Controls.Add(this.lblBlueCount);
-            this.guna2GradientPanel9.FillColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.Lavender;
-            this.guna2GradientPanel9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel9.Location = new System.Drawing.Point(45, 622);
-            this.guna2GradientPanel9.Name = "guna2GradientPanel9";
-            this.guna2GradientPanel9.Size = new System.Drawing.Size(665, 215);
-            this.guna2GradientPanel9.TabIndex = 18;
-            // 
-            // guna2GradientPanel10
-            // 
-            this.guna2GradientPanel10.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel10.BorderRadius = 30;
-            this.guna2GradientPanel10.BorderThickness = 5;
-            this.guna2GradientPanel10.Controls.Add(this.guna2PictureBox1);
-            this.guna2GradientPanel10.Controls.Add(this.label2);
-            this.guna2GradientPanel10.Controls.Add(this.button1);
-            this.guna2GradientPanel10.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel10.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel10.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientPanel10.Location = new System.Drawing.Point(745, 622);
-            this.guna2GradientPanel10.Name = "guna2GradientPanel10";
-            this.guna2GradientPanel10.Size = new System.Drawing.Size(546, 215);
-            this.guna2GradientPanel10.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(242, 48);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Create more student by \r\nclicking the button below";
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnDashboard.BorderColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDashboard.FillColor = System.Drawing.Color.Transparent;
-            this.btnDashboard.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.ForeColor = System.Drawing.Color.White;
-            this.btnDashboard.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btnDashboard.Image = global::EVEDRI1.Properties.Resources.dashboard__1_;
-            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnDashboard.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnDashboard.Location = new System.Drawing.Point(12, 258);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Size = new System.Drawing.Size(281, 87);
-            this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
+            this.guna2GradientPanel6.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel6.BorderRadius = 30;
+            this.guna2GradientPanel6.BorderThickness = 5;
+            this.guna2GradientPanel6.Controls.Add(this.pictureBox4);
+            this.guna2GradientPanel6.Controls.Add(this.pictureBox3);
+            this.guna2GradientPanel6.Controls.Add(this.label3);
+            this.guna2GradientPanel6.Controls.Add(this.lblFemale);
+            this.guna2GradientPanel6.Controls.Add(this.lblFemaleCount);
+            this.guna2GradientPanel6.Controls.Add(this.lblMaleCount);
+            this.guna2GradientPanel6.Controls.Add(this.lblMale);
+            this.guna2GradientPanel6.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Lavender;
+            this.guna2GradientPanel6.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel6.Location = new System.Drawing.Point(857, 118);
+            this.guna2GradientPanel6.Name = "guna2GradientPanel6";
+            this.guna2GradientPanel6.Size = new System.Drawing.Size(434, 215);
+            this.guna2GradientPanel6.TabIndex = 19;
             // 
             // pictureBox4
             // 
@@ -867,6 +720,22 @@
             this.pictureBox3.TabIndex = 19;
             this.pictureBox3.TabStop = false;
             // 
+            // guna2GradientPanel5
+            // 
+            this.guna2GradientPanel5.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel5.BorderRadius = 30;
+            this.guna2GradientPanel5.BorderThickness = 5;
+            this.guna2GradientPanel5.Controls.Add(this.pictureBox2);
+            this.guna2GradientPanel5.Controls.Add(this.lblInactivestudents);
+            this.guna2GradientPanel5.Controls.Add(this.lblInactivestudentscount);
+            this.guna2GradientPanel5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Lavender;
+            this.guna2GradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(444, 118);
+            this.guna2GradientPanel5.Name = "guna2GradientPanel5";
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(389, 215);
+            this.guna2GradientPanel5.TabIndex = 18;
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::EVEDRI1.Properties.Resources.User_Xmark__Streamline_Font_Awesome;
@@ -876,6 +745,22 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
+            // 
+            // guna2GradientPanel4
+            // 
+            this.guna2GradientPanel4.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel4.BorderRadius = 30;
+            this.guna2GradientPanel4.BorderThickness = 5;
+            this.guna2GradientPanel4.Controls.Add(this.pictureBox1);
+            this.guna2GradientPanel4.Controls.Add(this.lblActivestudents);
+            this.guna2GradientPanel4.Controls.Add(this.lblActivestudentsCount);
+            this.guna2GradientPanel4.FillColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.Lavender;
+            this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel4.Location = new System.Drawing.Point(45, 118);
+            this.guna2GradientPanel4.Name = "guna2GradientPanel4";
+            this.guna2GradientPanel4.Size = new System.Drawing.Size(389, 215);
+            this.guna2GradientPanel4.TabIndex = 17;
             // 
             // pictureBox1
             // 
@@ -907,7 +792,7 @@
             this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnMaximize.TabIndex = 12;
             this.btnMaximize.TabStop = false;
-            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
+ 
             // 
             // btnMinimize
             // 
@@ -920,6 +805,43 @@
             this.btnMinimize.TabStop = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // guna2GradientPanel10
+            // 
+            this.guna2GradientPanel10.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel10.BorderRadius = 30;
+            this.guna2GradientPanel10.BorderThickness = 5;
+            this.guna2GradientPanel10.Controls.Add(this.btnAddstudent);
+            this.guna2GradientPanel10.Controls.Add(this.guna2PictureBox1);
+            this.guna2GradientPanel10.Controls.Add(this.label2);
+            this.guna2GradientPanel10.FillColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel10.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel10.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel10.Location = new System.Drawing.Point(745, 622);
+            this.guna2GradientPanel10.Name = "guna2GradientPanel10";
+            this.guna2GradientPanel10.Size = new System.Drawing.Size(546, 215);
+            this.guna2GradientPanel10.TabIndex = 18;
+            // 
+            // btnAddstudent
+            // 
+            this.btnAddstudent.BorderColor = System.Drawing.Color.White;
+            this.btnAddstudent.BorderThickness = 3;
+            this.btnAddstudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddstudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddstudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddstudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddstudent.FillColor = System.Drawing.Color.Transparent;
+            this.btnAddstudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddstudent.ForeColor = System.Drawing.Color.White;
+            this.btnAddstudent.Image = global::EVEDRI1.Properties.Resources.plus;
+            this.btnAddstudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnAddstudent.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddstudent.Location = new System.Drawing.Point(35, 116);
+            this.btnAddstudent.Name = "btnAddstudent";
+            this.btnAddstudent.Size = new System.Drawing.Size(208, 62);
+            this.btnAddstudent.TabIndex = 18;
+            this.btnAddstudent.Text = "Create Student";
+            this.btnAddstudent.Click += new System.EventHandler(this.btnAddstudent_Click);
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::EVEDRI1.Properties.Resources.presentation__1_;
@@ -930,6 +852,37 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 17;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(33, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(242, 48);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Create more student by \r\nclicking the button below";
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.BorderRadius = 30;
+            this.guna2GradientPanel2.Controls.Add(this.btnActivestudent);
+            this.guna2GradientPanel2.Controls.Add(this.btnInactivestudent);
+            this.guna2GradientPanel2.Controls.Add(this.btnLogs);
+            this.guna2GradientPanel2.Controls.Add(this.pnlsettings);
+            this.guna2GradientPanel2.Controls.Add(this.btnUpload);
+            this.guna2GradientPanel2.Controls.Add(this.lblUserfulname);
+            this.guna2GradientPanel2.Controls.Add(this.txtPicture);
+            this.guna2GradientPanel2.Controls.Add(this.picUser);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(11, 14);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(282, 623);
+            this.guna2GradientPanel2.TabIndex = 18;
             // 
             // btnActivestudent
             // 
@@ -944,6 +897,9 @@
             this.btnActivestudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActivestudent.ForeColor = System.Drawing.Color.White;
             this.btnActivestudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnActivestudent.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnActivestudent.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnActivestudent.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnActivestudent.Image = global::EVEDRI1.Properties.Resources.file_check;
             this.btnActivestudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnActivestudent.ImageSize = new System.Drawing.Size(40, 40);
@@ -967,6 +923,9 @@
             this.btnInactivestudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInactivestudent.ForeColor = System.Drawing.Color.White;
             this.btnInactivestudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnInactivestudent.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnInactivestudent.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnInactivestudent.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnInactivestudent.Image = global::EVEDRI1.Properties.Resources.document;
             this.btnInactivestudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnInactivestudent.ImageSize = new System.Drawing.Size(40, 40);
@@ -989,6 +948,9 @@
             this.btnLogs.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogs.ForeColor = System.Drawing.Color.White;
             this.btnLogs.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnLogs.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnLogs.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnLogs.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogs.Image = global::EVEDRI1.Properties.Resources.log_data;
             this.btnLogs.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogs.ImageSize = new System.Drawing.Size(40, 40);
@@ -998,19 +960,6 @@
             this.btnLogs.TabIndex = 3;
             this.btnLogs.Text = "Logs";
             this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
-            // 
-            // picUser
-            // 
-            this.picUser.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.picUser.BorderRadius = 5;
-            this.picUser.Image = global::EVEDRI1.Properties.Resources.Minimalist_Avatar___Illustration_on_Behance;
-            this.picUser.ImageRotate = 0F;
-            this.picUser.Location = new System.Drawing.Point(65, 31);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(145, 137);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picUser.TabIndex = 5;
-            this.picUser.TabStop = false;
             // 
             // btnUpload
             // 
@@ -1022,11 +971,39 @@
             this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnUpload.ForeColor = System.Drawing.Color.White;
             this.btnUpload.Image = global::EVEDRI1.Properties.Resources.upload;
-            this.btnUpload.Location = new System.Drawing.Point(318, 131);
+            this.btnUpload.Location = new System.Drawing.Point(173, 129);
             this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(47, 45);
+            this.btnUpload.Size = new System.Drawing.Size(37, 39);
             this.btnUpload.TabIndex = 6;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // picUser
+            // 
+            this.picUser.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.picUser.BorderRadius = 5;
+            this.picUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picUser.Image = global::EVEDRI1.Properties.Resources.Minimalist_Avatar___Illustration_on_Behance;
+            this.picUser.ImageRotate = 0F;
+            this.picUser.Location = new System.Drawing.Point(65, 31);
+            this.picUser.Name = "picUser";
+            this.picUser.Size = new System.Drawing.Size(145, 137);
+            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picUser.TabIndex = 5;
+            this.picUser.TabStop = false;
+            // 
+            // guna2GradientPanel3
+            // 
+            this.guna2GradientPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.Controls.Add(this.guna2GradientPanel1);
+            this.guna2GradientPanel3.Controls.Add(this.guna2GradientPanel2);
+            this.guna2GradientPanel3.Controls.Add(this.btnLogout);
+            this.guna2GradientPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.GhostWhite;
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(1697, 891);
+            this.guna2GradientPanel3.TabIndex = 19;
             // 
             // btnLogout
             // 
@@ -1042,6 +1019,9 @@
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
             this.btnLogout.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnLogout.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnLogout.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnLogout.Image = global::EVEDRI1.Properties.Resources.logout;
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
@@ -1051,6 +1031,33 @@
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Logout";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnDashboard.BorderColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDashboard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDashboard.FillColor = System.Drawing.Color.Transparent;
+            this.btnDashboard.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnDashboard.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.White;
+            this.btnDashboard.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnDashboard.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnDashboard.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnDashboard.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDashboard.Image = global::EVEDRI1.Properties.Resources.dashboard__1_;
+            this.btnDashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnDashboard.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnDashboard.Location = new System.Drawing.Point(12, 258);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Size = new System.Drawing.Size(281, 87);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Dashboard
             // 
@@ -1068,32 +1075,32 @@
             this.pnlsettings.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            this.guna2GradientPanel2.ResumeLayout(false);
-            this.guna2GradientPanel2.PerformLayout();
-            this.guna2GradientPanel3.ResumeLayout(false);
-            this.guna2GradientPanel4.ResumeLayout(false);
-            this.guna2GradientPanel4.PerformLayout();
-            this.guna2GradientPanel5.ResumeLayout(false);
-            this.guna2GradientPanel5.PerformLayout();
-            this.guna2GradientPanel6.ResumeLayout(false);
-            this.guna2GradientPanel6.PerformLayout();
-            this.guna2GradientPanel7.ResumeLayout(false);
-            this.guna2GradientPanel7.PerformLayout();
-            this.guna2GradientPanel8.ResumeLayout(false);
-            this.guna2GradientPanel8.PerformLayout();
             this.guna2GradientPanel9.ResumeLayout(false);
             this.guna2GradientPanel9.PerformLayout();
-            this.guna2GradientPanel10.ResumeLayout(false);
-            this.guna2GradientPanel10.PerformLayout();
+            this.guna2GradientPanel8.ResumeLayout(false);
+            this.guna2GradientPanel8.PerformLayout();
+            this.guna2GradientPanel7.ResumeLayout(false);
+            this.guna2GradientPanel7.PerformLayout();
+            this.guna2GradientPanel6.ResumeLayout(false);
+            this.guna2GradientPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.guna2GradientPanel5.ResumeLayout(false);
+            this.guna2GradientPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.guna2GradientPanel4.ResumeLayout(false);
+            this.guna2GradientPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            this.guna2GradientPanel10.ResumeLayout(false);
+            this.guna2GradientPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2GradientPanel2.ResumeLayout(false);
+            this.guna2GradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            this.guna2GradientPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1142,7 +1149,6 @@
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.Label lblBadmintonCount;
         private System.Windows.Forms.Label lblBadminton;
-        private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2GradientButton btnInactivestudent;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogs;
         private Guna.UI2.WinForms.Guna2GradientButton btnActivestudent;
@@ -1150,7 +1156,6 @@
         private System.Windows.Forms.TextBox txtPicture;
         private System.Windows.Forms.FlowLayoutPanel pnlsettings;
         private Guna.UI2.WinForms.Guna2Button btnCLose;
-        private Guna.UI2.WinForms.Guna2Button btnCamera;
         private Guna.UI2.WinForms.Guna2Button btnfromafile;
         private Guna.UI2.WinForms.Guna2Button btnUpload;
         private System.Windows.Forms.Label lblUserfulname;
@@ -1172,5 +1177,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button btnAddstudent;
     }
 }
