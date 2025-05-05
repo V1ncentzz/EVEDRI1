@@ -36,8 +36,8 @@ namespace EVEDRI1
             this.FormBorderStyle = FormBorderStyle.None;
             // Center the form
             this.StartPosition = FormStartPosition.CenterScreen;
-            panel1.MouseDown += Login_MouseDown;
-            guna2GradientPanel1.MouseDown += Login_MouseDown;
+            ///panel1.MouseDown += Login_MouseDown;
+            //guna2GradientPanel1.MouseDown += Login_MouseDown;
 
             Mylogs mylogs = new Mylogs();
             mylogs.insertlog("user", "message");
@@ -101,14 +101,14 @@ namespace EVEDRI1
         {
             //Textbox Username
             txtUsername.IconLeft = Image.FromFile("ICON USERNAME.png");
-            txtUsername.IconLeftSize = new Size(50, 50);
+            txtUsername.IconLeftSize = new Size(40,40);
             txtUsername.ShadowDecoration.Enabled = true;
             txtUsername.ShadowDecoration.Color = Color.Gray;
             txtUsername.ShadowDecoration.Depth = 5;
 
             //Textbox Password
             txtPassword.IconLeft = Image.FromFile("ICON PASSWORD.png");
-            txtPassword.IconLeftSize = new Size(50, 50);
+            txtPassword.IconLeftSize = new Size(40, 40);
             txtPassword.ShadowDecoration.Enabled = true;
             txtPassword.ShadowDecoration.Color = Color.Gray;
             txtPassword.ShadowDecoration.Depth = 5;
@@ -206,6 +206,11 @@ namespace EVEDRI1
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

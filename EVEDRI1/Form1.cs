@@ -1,15 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Spire.Xls;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml.Linq;
-using Spire.Xls;
-using static Guna.UI2.Native.WinApi;
 
 
 namespace EVEDRI1
@@ -31,22 +23,22 @@ namespace EVEDRI1
 
 
 
-        Form2   form2 = new Form2();
+        Form2 form2 = new Form2();
         public Form1()
         {
             InitializeComponent();
             lblId.Visible = false;
-           
+
         }
 
         public string checkEmpty()
         {
             string error = "";
-            foreach(Control c in Controls)
+            foreach (Control c in Controls)
             {
                 if (c is TextBox)
                 {
-                    if(c.Text == "")
+                    if (c.Text == "")
                     {
                         error += c.Name + "is empty";
                     }
@@ -57,7 +49,7 @@ namespace EVEDRI1
 
         private void btnAdddata_Click(object sender, EventArgs e)
         {
-            lblMessage.Text = checkEmpty(); 
+            lblMessage.Text = checkEmpty();
             //Form1 Data Adding
             name = txtName.Text;
             email = txtEmail.Text;
@@ -108,7 +100,7 @@ namespace EVEDRI1
             Workbook workbook = new Workbook();
             workbook.LoadFromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\Book1.xlsx"); //Change file location
             Worksheet sheet = workbook.Worksheets[0];
-            int row = sheet.Rows.Length +1;
+            int row = sheet.Rows.Length + 1;
             sheet.Range[row, 1].Value = name;
             sheet.Range[row, 2].Value = gender;
             sheet.Range[row, 3].Value = hobbies;
@@ -157,7 +149,7 @@ namespace EVEDRI1
             cbmFavcolor.SelectedIndex = -1;
             dtpBirthday.CustomFormat = string.Empty;
         }
-   
+
         private void btnDisplayall_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -291,7 +283,7 @@ namespace EVEDRI1
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-           Login login = new Login();
+            Login login = new Login();
             login.Show();
             this.Close();
         }

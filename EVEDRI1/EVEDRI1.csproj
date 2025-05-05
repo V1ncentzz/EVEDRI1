@@ -202,6 +202,25 @@
     <Content Include="ICON USERNAME.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\presentation %281%29.png" />
+    <None Include="Resources\presentation.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\femenine %281%29.png" />
+    <None Include="Resources\male-gender %281%29.png" />
+    <None Include="Resources\log-data.png" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\file-check.png" />
+    <None Include="Resources\dashboard %281%29.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\Astrology-Selene--Streamline-Ultimate.png" />
+    <None Include="Resources\Gender-Male--Streamline-Ultimate.png" />
+    <None Include="Resources\User-Xmark--Streamline-Font-Awesome.png" />
+    <None Include="Resources\User-Check--Streamline-Font-Awesome %282%29.png" />
+    <None Include="Resources\User-Check--Streamline-Font-Awesome %281%29.png" />
+    <None Include="Resources\User-Check--Streamline-Font-Awesome.png" />
+    <None Include="Resources\Minimalist Avatar - Illustration on Behance.jpg" />
+    <None Include="Resources\Artboard 1.png" />
+    <None Include="Resources\LOGIN.png" />
     <None Include="Resources\Minimize Window.png" />
     <None Include="Resources\Maximize Window.png" />
     <None Include="Resources\Close Window.png" />

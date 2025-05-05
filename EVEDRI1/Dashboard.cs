@@ -1,18 +1,7 @@
-﻿using AForge;
-using Spire.Xls;
+﻿using Spire.Xls;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web.UI.WebControls;
 using System.Windows.Forms;
-using TheArtOfDevHtmlRenderer.Adapters;
 
 namespace EVEDRI1
 {
@@ -34,49 +23,14 @@ namespace EVEDRI1
 
         }
 
-        bool sidebarExpand = true;
-        bool pnlDashboardExpand = true;
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-           if (sidebarExpand)
-            {
-                Sidebar.Width -= 10;
-                if(Sidebar.Width <= 63)
-                {
-                    sidebarExpand = false;
-                    Sidebartranstion.Stop();
-                }
-            }
-            else
-            {
-                Sidebar.Width += 10;
-                if (Sidebar.Width >= 282)
-                {
-                    sidebarExpand = true;
-                    Sidebartranstion.Stop();
-                }
-            }
-        }
+     
+       
 
-        private void LoadpanelForm(Form panelForm)
-        {
-            if (currentForm != null)
-            {
-                currentForm.Close(); 
-            }
-            currentForm = panelForm; 
-            panelForm.TopLevel = false;
-            panelForm.FormBorderStyle = FormBorderStyle.None; 
-            panelForm.Dock = DockStyle.Fill;
-            pnllDashboard.Controls.Add(panelForm); 
-            pnllDashboard.Tag = panelForm; 
-            panelForm.BringToFront(); 
-            panelForm.Show(); 
-        }
+        
 
         //public int showcount(int c, string val)
         //{
-             
+
         //}
 
 
@@ -100,7 +54,7 @@ namespace EVEDRI1
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            LoadpanelForm(new Dashboard());
+          
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -133,12 +87,12 @@ namespace EVEDRI1
 
         private void btnActivestudent_Click(object sender, EventArgs e)
         {
-           LoadpanelForm(new Form2());
+           
         }
 
         private void btnLogs_Click(object sender, EventArgs e)
         {
-          LoadpanelForm(new Logs());
+            
         }
 
         private void btnfromafile_Click(object sender, EventArgs e)
