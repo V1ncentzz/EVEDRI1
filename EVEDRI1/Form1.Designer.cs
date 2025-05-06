@@ -67,21 +67,21 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnLogs = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnMinimize = new System.Windows.Forms.PictureBox();
-            this.btnMaximize = new System.Windows.Forms.PictureBox();
-            this.btnClosewindow = new System.Windows.Forms.PictureBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtSaying = new Guna.UI2.WinForms.Guna2TextBox();
-            this.cbmFavcolor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cbmCourse = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbmFavcolor = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtSaying = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnMaximize = new System.Windows.Forms.PictureBox();
+            this.btnClosewindow = new System.Windows.Forms.PictureBox();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -90,11 +90,11 @@
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.guna2GradientPanel1.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).BeginInit();
-            this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -103,7 +103,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(1196, 674);
+            this.btnUpdate.Location = new System.Drawing.Point(1092, 476);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(194, 52);
             this.btnUpdate.TabIndex = 52;
@@ -154,7 +154,7 @@
             this.btnDisplayall.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDisplayall.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDisplayall.ForeColor = System.Drawing.Color.White;
-            this.btnDisplayall.Location = new System.Drawing.Point(1420, 661);
+            this.btnDisplayall.Location = new System.Drawing.Point(1309, 476);
             this.btnDisplayall.Name = "btnDisplayall";
             this.btnDisplayall.Size = new System.Drawing.Size(194, 52);
             this.btnDisplayall.TabIndex = 48;
@@ -168,7 +168,7 @@
             this.btnAdddata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdddata.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdddata.ForeColor = System.Drawing.Color.White;
-            this.btnAdddata.Location = new System.Drawing.Point(1178, 746);
+            this.btnAdddata.Location = new System.Drawing.Point(1092, 540);
             this.btnAdddata.Name = "btnAdddata";
             this.btnAdddata.Size = new System.Drawing.Size(194, 52);
             this.btnAdddata.TabIndex = 47;
@@ -192,7 +192,7 @@
             this.lblFavoritecolor.AutoSize = true;
             this.lblFavoritecolor.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFavoritecolor.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblFavoritecolor.Location = new System.Drawing.Point(46, 625);
+            this.lblFavoritecolor.Location = new System.Drawing.Point(55, 540);
             this.lblFavoritecolor.Name = "lblFavoritecolor";
             this.lblFavoritecolor.Size = new System.Drawing.Size(148, 26);
             this.lblFavoritecolor.TabIndex = 44;
@@ -236,7 +236,7 @@
             this.lblHobbies.AutoSize = true;
             this.lblHobbies.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHobbies.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblHobbies.Location = new System.Drawing.Point(965, 322);
+            this.lblHobbies.Location = new System.Drawing.Point(964, 38);
             this.lblHobbies.Name = "lblHobbies";
             this.lblHobbies.Size = new System.Drawing.Size(92, 26);
             this.lblHobbies.TabIndex = 39;
@@ -305,7 +305,7 @@
             // txtAge
             // 
             this.txtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAge.Location = new System.Drawing.Point(1191, 310);
+            this.txtAge.Location = new System.Drawing.Point(60, 476);
             this.txtAge.Name = "txtAge";
             this.txtAge.ReadOnly = true;
             this.txtAge.Size = new System.Drawing.Size(402, 31);
@@ -328,7 +328,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(1144, 223);
+            this.label2.Location = new System.Drawing.Point(55, 447);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 26);
             this.label2.TabIndex = 58;
@@ -383,7 +383,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(50, 736);
+            this.label6.Location = new System.Drawing.Point(57, 651);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(82, 26);
             this.label6.TabIndex = 67;
@@ -394,7 +394,7 @@
             this.lblMessage.AutoSize = true;
             this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.ForeColor = System.Drawing.Color.Red;
-            this.lblMessage.Location = new System.Drawing.Point(1206, 322);
+            this.lblMessage.Location = new System.Drawing.Point(793, 523);
             this.lblMessage.Name = "lblMessage";
             this.lblMessage.Size = new System.Drawing.Size(166, 25);
             this.lblMessage.TabIndex = 78;
@@ -405,7 +405,7 @@
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel8.Controls.Add(this.chkBaseball);
-            this.panel8.Location = new System.Drawing.Point(1168, 457);
+            this.panel8.Location = new System.Drawing.Point(1167, 173);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 51);
             this.panel8.TabIndex = 76;
@@ -415,7 +415,7 @@
             this.panel7.BackColor = System.Drawing.Color.White;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel7.Controls.Add(this.chkTennis);
-            this.panel7.Location = new System.Drawing.Point(969, 456);
+            this.panel7.Location = new System.Drawing.Point(968, 172);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 51);
             this.panel7.TabIndex = 73;
@@ -425,7 +425,7 @@
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel9.Controls.Add(this.chkBadminton);
-            this.panel9.Location = new System.Drawing.Point(1168, 406);
+            this.panel9.Location = new System.Drawing.Point(1167, 122);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 51);
             this.panel9.TabIndex = 75;
@@ -435,7 +435,7 @@
             this.panel6.BackColor = System.Drawing.Color.White;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel6.Controls.Add(this.chkBasketball);
-            this.panel6.Location = new System.Drawing.Point(968, 406);
+            this.panel6.Location = new System.Drawing.Point(967, 122);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 51);
             this.panel6.TabIndex = 72;
@@ -445,7 +445,7 @@
             this.panel10.BackColor = System.Drawing.Color.White;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel10.Controls.Add(this.chkSoccer);
-            this.panel10.Location = new System.Drawing.Point(1167, 355);
+            this.panel10.Location = new System.Drawing.Point(1166, 71);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 51);
             this.panel10.TabIndex = 74;
@@ -455,7 +455,7 @@
             this.panel5.BackColor = System.Drawing.Color.White;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.chkVolleyball);
-            this.panel5.Location = new System.Drawing.Point(967, 355);
+            this.panel5.Location = new System.Drawing.Point(966, 71);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 51);
             this.panel5.TabIndex = 71;
@@ -483,7 +483,7 @@
             // btnDashboard
             // 
             this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashboard.Location = new System.Drawing.Point(1263, 551);
+            this.btnDashboard.Location = new System.Drawing.Point(1193, 362);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(178, 74);
             this.btnDashboard.TabIndex = 78;
@@ -494,7 +494,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1398, 306);
+            this.button1.Location = new System.Drawing.Point(1009, 282);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(178, 74);
             this.button1.TabIndex = 79;
@@ -504,17 +504,18 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1398, 386);
+            this.button2.Location = new System.Drawing.Point(1194, 282);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(178, 74);
             this.button2.TabIndex = 80;
             this.button2.Text = "Inactive Students";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnLogs
             // 
             this.btnLogs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogs.Location = new System.Drawing.Point(1313, 467);
+            this.btnLogs.Location = new System.Drawing.Point(1009, 362);
             this.btnLogs.Name = "btnLogs";
             this.btnLogs.Size = new System.Drawing.Size(178, 74);
             this.btnLogs.TabIndex = 81;
@@ -525,44 +526,13 @@
             // btnLogout
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.Location = new System.Drawing.Point(1497, 467);
+            this.btnLogout.Location = new System.Drawing.Point(1378, 282);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(178, 74);
             this.btnLogout.TabIndex = 82;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::EVEDRI1.Properties.Resources.Minimize_Window;
-            this.btnMinimize.Location = new System.Drawing.Point(1460, 34);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinimize.TabIndex = 13;
-            this.btnMinimize.TabStop = false;
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Image = global::EVEDRI1.Properties.Resources.Maximize_Window;
-            this.btnMaximize.Location = new System.Drawing.Point(1508, 25);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMaximize.TabIndex = 12;
-            this.btnMaximize.TabStop = false;
-            // 
-            // btnClosewindow
-            // 
-            this.btnClosewindow.Image = global::EVEDRI1.Properties.Resources.Close_Window;
-            this.btnClosewindow.Location = new System.Drawing.Point(1560, 34);
-            this.btnClosewindow.Name = "btnClosewindow";
-            this.btnClosewindow.Size = new System.Drawing.Size(30, 30);
-            this.btnClosewindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnClosewindow.TabIndex = 11;
-            this.btnClosewindow.TabStop = false;
-            this.btnClosewindow.Click += new System.EventHandler(this.btnClosewindow_Click);
             // 
             // lblId
             // 
@@ -589,8 +559,11 @@
             this.guna2GradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.guna2GradientPanel1.BorderRadius = 30;
             this.guna2GradientPanel1.BorderThickness = 1;
+            this.guna2GradientPanel1.Controls.Add(this.btnLogout);
             this.guna2GradientPanel1.Controls.Add(this.dtpBirthday);
+            this.guna2GradientPanel1.Controls.Add(this.btnLogs);
             this.guna2GradientPanel1.Controls.Add(this.cbmCourse);
+            this.guna2GradientPanel1.Controls.Add(this.txtAge);
             this.guna2GradientPanel1.Controls.Add(this.cbmFavcolor);
             this.guna2GradientPanel1.Controls.Add(this.txtSaying);
             this.guna2GradientPanel1.Controls.Add(this.txtEmail);
@@ -637,116 +610,46 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1638, 834);
             this.guna2GradientPanel1.TabIndex = 85;
             // 
-            // guna2GradientPanel2
+            // cbmCourse
             // 
-            this.guna2GradientPanel2.Controls.Add(this.guna2GradientPanel1);
-            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(1697, 891);
-            this.guna2GradientPanel2.TabIndex = 86;
+            this.cbmCourse.BackColor = System.Drawing.Color.Transparent;
+            this.cbmCourse.BorderRadius = 20;
+            this.cbmCourse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbmCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmCourse.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmCourse.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmCourse.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cbmCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbmCourse.ItemHeight = 30;
+            this.cbmCourse.Items.AddRange(new object[] {
+            "BSIT",
+            "BSTM",
+            "BEED"});
+            this.cbmCourse.Location = new System.Drawing.Point(58, 690);
+            this.cbmCourse.Name = "cbmCourse";
+            this.cbmCourse.Size = new System.Drawing.Size(343, 36);
+            this.cbmCourse.TabIndex = 92;
             // 
-            // txtName
+            // cbmFavcolor
             // 
-            this.txtName.BorderRadius = 20;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.DefaultText = "";
-            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtName.Location = new System.Drawing.Point(53, 140);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtName.Name = "txtName";
-            this.txtName.PlaceholderText = "";
-            this.txtName.SelectedText = "";
-            this.txtName.Size = new System.Drawing.Size(392, 61);
-            this.txtName.TabIndex = 85;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.BorderRadius = 20;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Location = new System.Drawing.Point(534, 70);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(392, 61);
-            this.txtUsername.TabIndex = 86;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.BorderRadius = 20;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Location = new System.Drawing.Point(534, 190);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PlaceholderText = "";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(392, 61);
-            this.txtPassword.TabIndex = 87;
-            // 
-            // txtAddress
-            // 
-            this.txtAddress.BorderRadius = 20;
-            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtAddress.DefaultText = "";
-            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Location = new System.Drawing.Point(535, 319);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtAddress.Name = "txtAddress";
-            this.txtAddress.PlaceholderText = "";
-            this.txtAddress.SelectedText = "";
-            this.txtAddress.Size = new System.Drawing.Size(392, 61);
-            this.txtAddress.TabIndex = 88;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BorderRadius = 20;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.DefaultText = "";
-            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEmail.Location = new System.Drawing.Point(544, 434);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.PlaceholderText = "";
-            this.txtEmail.SelectedText = "";
-            this.txtEmail.Size = new System.Drawing.Size(392, 61);
-            this.txtEmail.TabIndex = 89;
+            this.cbmFavcolor.BackColor = System.Drawing.Color.Transparent;
+            this.cbmFavcolor.BorderRadius = 20;
+            this.cbmFavcolor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbmFavcolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbmFavcolor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmFavcolor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbmFavcolor.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.cbmFavcolor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbmFavcolor.ItemHeight = 30;
+            this.cbmFavcolor.Items.AddRange(new object[] {
+            "Orange",
+            "Blue",
+            "Yellow",
+            "Red"});
+            this.cbmFavcolor.Location = new System.Drawing.Point(55, 589);
+            this.cbmFavcolor.Name = "cbmFavcolor";
+            this.cbmFavcolor.Size = new System.Drawing.Size(343, 36);
+            this.cbmFavcolor.TabIndex = 91;
             // 
             // txtSaying
             // 
@@ -768,46 +671,147 @@
             this.txtSaying.Size = new System.Drawing.Size(535, 219);
             this.txtSaying.TabIndex = 90;
             // 
-            // cbmFavcolor
+            // txtEmail
             // 
-            this.cbmFavcolor.BackColor = System.Drawing.Color.Transparent;
-            this.cbmFavcolor.BorderRadius = 20;
-            this.cbmFavcolor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbmFavcolor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbmFavcolor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbmFavcolor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbmFavcolor.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cbmFavcolor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbmFavcolor.ItemHeight = 30;
-            this.cbmFavcolor.Items.AddRange(new object[] {
-            "Orange",
-            "Blue",
-            "Yellow",
-            "Red"});
-            this.cbmFavcolor.Location = new System.Drawing.Point(43, 674);
-            this.cbmFavcolor.Name = "cbmFavcolor";
-            this.cbmFavcolor.Size = new System.Drawing.Size(343, 36);
-            this.cbmFavcolor.TabIndex = 91;
+            this.txtEmail.BorderRadius = 20;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.DefaultText = "";
+            this.txtEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEmail.Location = new System.Drawing.Point(544, 434);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.PlaceholderText = "";
+            this.txtEmail.SelectedText = "";
+            this.txtEmail.Size = new System.Drawing.Size(392, 61);
+            this.txtEmail.TabIndex = 89;
             // 
-            // cbmCourse
+            // txtAddress
             // 
-            this.cbmCourse.BackColor = System.Drawing.Color.Transparent;
-            this.cbmCourse.BorderRadius = 20;
-            this.cbmCourse.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbmCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbmCourse.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbmCourse.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbmCourse.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.cbmCourse.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbmCourse.ItemHeight = 30;
-            this.cbmCourse.Items.AddRange(new object[] {
-            "BSIT",
-            "BSTM",
-            "BEED"});
-            this.cbmCourse.Location = new System.Drawing.Point(51, 784);
-            this.cbmCourse.Name = "cbmCourse";
-            this.cbmCourse.Size = new System.Drawing.Size(343, 36);
-            this.cbmCourse.TabIndex = 92;
+            this.txtAddress.BorderRadius = 20;
+            this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtAddress.DefaultText = "";
+            this.txtAddress.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtAddress.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtAddress.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtAddress.Location = new System.Drawing.Point(535, 319);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.SelectedText = "";
+            this.txtAddress.Size = new System.Drawing.Size(392, 61);
+            this.txtAddress.TabIndex = 88;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.BorderRadius = 20;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.Location = new System.Drawing.Point(534, 190);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PlaceholderText = "";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(392, 61);
+            this.txtPassword.TabIndex = 87;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.BorderRadius = 20;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Location = new System.Drawing.Point(534, 70);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(392, 61);
+            this.txtUsername.TabIndex = 86;
+            // 
+            // txtName
+            // 
+            this.txtName.BorderRadius = 20;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.DefaultText = "";
+            this.txtName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtName.Location = new System.Drawing.Point(53, 140);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtName.Name = "txtName";
+            this.txtName.PlaceholderText = "";
+            this.txtName.SelectedText = "";
+            this.txtName.Size = new System.Drawing.Size(392, 61);
+            this.txtName.TabIndex = 85;
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Controls.Add(this.guna2GradientPanel1);
+            this.guna2GradientPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(1697, 891);
+            this.guna2GradientPanel2.TabIndex = 86;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Image = global::EVEDRI1.Properties.Resources.Minimize_Window;
+            this.btnMinimize.Location = new System.Drawing.Point(1460, 34);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
+            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMinimize.TabIndex = 13;
+            this.btnMinimize.TabStop = false;
+            // 
+            // btnMaximize
+            // 
+            this.btnMaximize.Image = global::EVEDRI1.Properties.Resources.Maximize_Window;
+            this.btnMaximize.Location = new System.Drawing.Point(1508, 25);
+            this.btnMaximize.Name = "btnMaximize";
+            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
+            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnMaximize.TabIndex = 12;
+            this.btnMaximize.TabStop = false;
+            // 
+            // btnClosewindow
+            // 
+            this.btnClosewindow.Image = global::EVEDRI1.Properties.Resources.Close_Window;
+            this.btnClosewindow.Location = new System.Drawing.Point(1560, 34);
+            this.btnClosewindow.Name = "btnClosewindow";
+            this.btnClosewindow.Size = new System.Drawing.Size(30, 30);
+            this.btnClosewindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnClosewindow.TabIndex = 11;
+            this.btnClosewindow.TabStop = false;
+            this.btnClosewindow.Click += new System.EventHandler(this.btnClosewindow_Click);
             // 
             // Form1
             // 
@@ -815,9 +819,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
             this.ClientSize = new System.Drawing.Size(1697, 891);
-            this.Controls.Add(this.btnLogout);
-            this.Controls.Add(this.btnLogs);
-            this.Controls.Add(this.txtAge);
             this.Controls.Add(this.guna2GradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -841,14 +842,13 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

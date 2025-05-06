@@ -113,6 +113,7 @@ namespace EVEDRI1
             sheet.Range[row, 10].Value = email;
             sheet.Range[row, 11].Value = username;
             sheet.Range[row, 12].Value = password;
+            sheet.Range[row, 13].Value = "1";
 
 
             // Save Excel
@@ -216,6 +217,7 @@ namespace EVEDRI1
             sheet.Range[row, 10].Value = email;
             sheet.Range[row, 11].Value = username;
             sheet.Range[row, 12].Value = password;
+            
 
             //Excel Save 
             workbook.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016); //Change file location
@@ -285,6 +287,13 @@ namespace EVEDRI1
         {
             Login login = new Login();
             login.Show();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
             this.Close();
         }
     }

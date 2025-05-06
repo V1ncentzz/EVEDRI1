@@ -27,11 +27,28 @@ namespace EVEDRI1
         }
         
         public void LoadExcelFile()
-        { 
-            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+        {
+            //book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+            //Worksheet sheet = book.Worksheets[0];
+            //DataTable dt = sheet.ExportDataTable();
+            //dataGridView1.DataSource = dt;
+
+            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
             Worksheet sheet = book.Worksheets[0];
-            DataTable dt = sheet.ExportDataTable();
-            dataGridView1.DataSource = dt;
+            DataTable fullTable = sheet.ExportDataTable();
+            DataTable activeStudents = fullTable.Clone();
+
+            foreach (DataRow row in fullTable.Rows)
+            {
+                if (row[12].ToString() == "1") // 13th column = Status
+                {
+                    activeStudents.ImportRow(row);
+                }
+            }
+
+            dataGridView1.DataSource = activeStudents;
+
+
         }
         
         public void ShowStudents(string status)
@@ -171,18 +188,36 @@ namespace EVEDRI1
             form1.btnAdddata.Visible = false;
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        //private void btnDelete_Click(object sender, EventArgs e)
+        //{
+        //    int selectedRow = dataGridView1.CurrentCell.RowIndex;
+        //    Worksheet sheet = book.Worksheets[0];
+        //    sheet.Range[selectedRow + 2, 13].Value = "0"; // Set status to inactive
+        //    book.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
+        //    LoadActiveStudents();
+
+        //    //Worksheet sheet = book.Worksheets[0];
+        //    //DataTable dt = sheet.ExportDataTable();
+        //    //dataGridView1.DataSource = dt;
+        //    //int row = sheet.Rows.Length;
+        //    //sheet.DeleteRow(row);
+        //    //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+        //    //{
+        //    //    dataGridView1.Rows.Remove(row);
+        //    //}
+        //}
+
+        private void LoadActiveStudents()
         {
+            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
             Worksheet sheet = book.Worksheets[0];
             DataTable dt = sheet.ExportDataTable();
-            dataGridView1.DataSource = dt;
-            int row = sheet.Rows.Length;
-            sheet.DeleteRow(row);
-            //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            //{
-            //    dataGridView1.Rows.Remove(row);
-            //}
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = "F13 = '1'"; // Assuming F13 is "Status"
+            dataGridView1.DataSource = dv.ToTable();
         }
+        
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -215,15 +250,36 @@ namespace EVEDRI1
 
         private void btnDeteteRow_Click(object sender, EventArgs e)
         {
+            int selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
+
+            // Load Excel
+            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
             Worksheet sheet = book.Worksheets[0];
-            DataTable dt = sheet.ExportDataTable();
-            dataGridView1.DataSource = dt;
-            int row = sheet.Rows.Length;
-            sheet.DeleteRow(row);
-            //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            //{
-            //    dataGridView1.Rows.Remove(row);
-            //}
+
+            // Update the status to 0
+            sheet.Range[selectedRowIndex + 2, 13].Value = "0"; // Set Status to Inactive (row + 2 for Excel index)
+
+            book.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
+
+            MessageBox.Show("Student marked as inactive.");
+            LoadExcelFile(); // Refresh
+
+            //    Worksheet sheet = book.Worksheets[0];
+            //    DataTable dt = sheet.ExportDataTable();
+            //    dataGridView1.DataSource = dt;
+            //    int row = sheet.Rows.Length;
+            //    sheet.DeleteRow(row);
+            //    foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            //    {
+            //        dataGridView1.Rows.Remove(row);
+            //    }
+        }
+
+            private void btnInactive_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Close();
         }
     }
 }
