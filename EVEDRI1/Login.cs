@@ -123,7 +123,7 @@ namespace EVEDRI1
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
             Worksheet sheet = workbook.Worksheets[0];
             int row = sheet.Rows.Length;
             bool login = false;
@@ -132,8 +132,8 @@ namespace EVEDRI1
             {
                 if (sheet.Range[i,11].Value == txtUsername.Text && sheet.Range[i, 12].Value == txtPassword.Text)
                 {
-                    d.picUser.Image = Image.FromFile(@"C:\Users\HF\Desktop\EVEDRI1latest\EVEDRI1\EVEDRI1\Resources\profileicon.jpg" + sheet.Range[i,14].Value);
-                    d.picUser.SizeMode = PictureBoxSizeMode.StretchImage;
+                    d.picUser.Image = Image.FromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Profiles\Minimalist Avatar - Illustration on Behance.jpg" + sheet.Range[i,14].Value);
+                       d.picUser.SizeMode = PictureBoxSizeMode.StretchImage;
                     login = true;
                     break;
                 }

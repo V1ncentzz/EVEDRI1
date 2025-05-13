@@ -24,7 +24,7 @@ namespace EVEDRI1
 
         public void LoadExcelFile()
         {
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
             Worksheet sheet = workbook.Worksheets[0];
             DataTable dt = sheet.ExportDataTable();
             DataGridInactive.DataSource = dt;
@@ -32,7 +32,7 @@ namespace EVEDRI1
 
         private void LoadInactiveStudents()
         {
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
             Worksheet sheet = workbook.Worksheets[0];
             DataTable fullTable = sheet.ExportDataTable();
             DataTable inactive = fullTable.Clone();
@@ -125,7 +125,7 @@ namespace EVEDRI1
             int rowIndex = DataGridInactive.CurrentCell.RowIndex;
             string studentName = DataGridInactive.Rows[rowIndex].Cells[0].Value.ToString();
 
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
             Worksheet sheet = workbook.Worksheets[0];
             int totalRows = sheet.Rows.Length;
 
@@ -138,7 +138,7 @@ namespace EVEDRI1
                 }
             }
 
-            workbook.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
+            workbook.SaveToFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx", ExcelVersion.Version2016);
             MessageBox.Show("Student reactivated.");
 
             LoadInactiveStudents();

@@ -98,7 +98,7 @@ namespace EVEDRI1
 
             //Excel Insert
             Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
             Worksheet sheet = workbook.Worksheets[0];
             int row = sheet.Rows.Length + 1;
             sheet.Range[row, 1].Value = name;
@@ -117,7 +117,7 @@ namespace EVEDRI1
 
 
             // Save Excel
-            workbook.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016); // Change file location
+            workbook.SaveToFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx", ExcelVersion.Version2016); // Change file location
             DataTable dt = sheet.ExportDataTable();
             form2.dataGridView1.DataSource = dt;
 
@@ -202,7 +202,7 @@ namespace EVEDRI1
 
             //Excel Update
             Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
             Worksheet sheet = workbook.Worksheets[0];
             int row = form2.dataGridView1.CurrentCell.RowIndex + 3;
             sheet.Range[row, 1].Value = name;
@@ -217,10 +217,11 @@ namespace EVEDRI1
             sheet.Range[row, 10].Value = email;
             sheet.Range[row, 11].Value = username;
             sheet.Range[row, 12].Value = password;
+            sheet.Range[row, 13].Value = "1";
             
 
             //Excel Save 
-            workbook.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016); //Change file location
+            workbook.SaveToFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx", ExcelVersion.Version2016); //Change file location
             DataTable dt = sheet.ExportDataTable();
             form2.dataGridView1.DataSource = dt;
             form2.Show();

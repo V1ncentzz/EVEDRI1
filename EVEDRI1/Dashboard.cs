@@ -48,7 +48,7 @@ namespace EVEDRI1
             try
             {
                 Workbook workbook = new Workbook();
-                workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
+                workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
                 Worksheet worksheet = workbook.Worksheets[0];
             }
             catch(Exception ex)
@@ -61,7 +61,7 @@ namespace EVEDRI1
         private void Count()
         {
             Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
+            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
             if (worksheet != null)
             {
                 int lastRow = worksheet.LastRow;

@@ -23,7 +23,7 @@ namespace EVEDRI1
             InitializeComponent();
            
             LoadExcelFile();
-            ShowStudents("Status =");
+            //ShowStudents("Status =");
         }
         
         public void LoadExcelFile()
@@ -33,36 +33,36 @@ namespace EVEDRI1
             //DataTable dt = sheet.ExportDataTable();
             //dataGridView1.DataSource = dt;
 
-            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
+            book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
             Worksheet sheet = book.Worksheets[0];
             DataTable fullTable = sheet.ExportDataTable();
             DataTable activeStudents = fullTable.Clone();
 
-            foreach (DataRow row in fullTable.Rows)
-            {
-                if (row[12].ToString() == "1") // 13th column = Status
-                {
-                    activeStudents.ImportRow(row);
-                }
-            }
+            //foreach (DataRow row in fullTable.Rows)
+            //{
+            //    if (row[12].ToString() == "1") // 13th column = Status
+            //    {
+            //        activeStudents.ImportRow(row);
+            //    }
+            //}
 
             dataGridView1.DataSource = activeStudents;
 
 
         }
         
-        public void ShowStudents(string status)
-        {
-            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
-            Worksheet worksheet = book.Worksheets[0];
-            DataTable dt = worksheet.ExportDataTable();
-            //DataRow[] rows = dt.Select("Status=" + status);
+        //public void ShowStudents(string status)
+        //{
+        //    book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
+        //    Worksheet worksheet = book.Worksheets[0];
+        //    DataTable dt = worksheet.ExportDataTable();
+        //    //DataRow[] rows = dt.Select("Status=" + status);
 
-            //foreach (DataRow i in rows)
-            //{
-            //    dataGridView1.Rows.Insert([0]
-            //}
-        }
+        //    //foreach (DataRow i in rows)
+        //    //{
+        //    //    dataGridView1.Rows.Insert([0]
+        //    //}
+        //}
 
 
 
@@ -112,6 +112,7 @@ namespace EVEDRI1
             string filterVal = searchVal.Replace("'", "''");
             bs.Filter = $"Name LIKE '{filterVal}%'";
             dataGridView1.DataSource = bs;
+           
 
            
         }
