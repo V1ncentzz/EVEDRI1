@@ -14,134 +14,174 @@ namespace EVEDRI1
 {
     public partial class Form3 : Form
     {
-        Workbook workbook = new Workbook();
-
         public Form3()
         {
             InitializeComponent();
-            LoadInactiveStudents();
+            LoadFileFromExcelInactive();
+            dgvResultIn.ForeColor = Color.Black;
         }
 
-        public void LoadExcelFile()
+        public void LoadFileFromExcelInactive()
         {
-            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
-            Worksheet sheet = workbook.Worksheets[0];
-            DataTable dt = sheet.ExportDataTable();
-            DataGridInactive.DataSource = dt;
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+            Worksheet sheet = book.Worksheets[1];
+
+            DataTable dt = new DataTable();
+            dt = sheet.ExportDataTable();
+            dgvResultIn.DataSource = dt;
         }
 
-        private void LoadInactiveStudents()
+        private void lblReturn_Click_1(object sender, EventArgs e)
         {
-            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
-            Worksheet sheet = workbook.Worksheets[0];
-            DataTable fullTable = sheet.ExportDataTable();
-            DataTable inactive = fullTable.Clone();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
 
-            foreach (DataRow row in fullTable.Rows)
+        public void MoveStudentBetweenSheets(int fromSheetIndex, int toSheetIndex, int rowIndexToMove)
+        {
+
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+
+            Worksheet fromSheet = book.Worksheets[fromSheetIndex];
+            Worksheet toSheet = book.Worksheets[toSheetIndex];
+
+            int lastRow = toSheet.LastRow + 1;
+
+            for (int col = 1; col <= fromSheet.LastColumn; col++)
             {
-                if (row[12].ToString() == "0") // Status = Inactive
+                var value = fromSheet.Range[rowIndexToMove + 2, col].Value ?? string.Empty;
+
+
+                if (col == 13)
                 {
-                    inactive.ImportRow(row);
+                    value = (toSheetIndex == 0) ? "1" : "0";
+
                 }
+                toSheet.Range[lastRow, col].Text = value.ToString();
             }
 
-            DataGridInactive.DataSource = inactive;
+
+            fromSheet.DeleteRow(rowIndexToMove + 2);
+
+            book.SaveToFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx", ExcelVersion.Version2016);
+
+            MessageBox.Show("The student has been successfully transferred!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void btnActiveStud_Click(object sender, EventArgs e)
         {
-            Form1 form1 = (Form1)Application.OpenForms["Form1"];
-            int r = DataGridInactive.CurrentCell.RowIndex;
-            form1.txtName.Text = DataGridInactive.Rows[r].Cells[0].Value.ToString();
-            form1.cbmCourse.Text = DataGridInactive.Rows[r].Cells[6].Value.ToString();
-            form1.txtEmail.Text = DataGridInactive.Rows[r].Cells[9].Value.ToString();
-            form1.txtAddress.Text = DataGridInactive.Rows[r].Cells[7].Value.ToString();
-            form1.txtSaying.Text = DataGridInactive.Rows[r].Cells[4].Value.ToString();
-            form1.cbmFavcolor.Text = DataGridInactive.Rows[r].Cells[3].Value.ToString();
-            form1.txtUsername.Text = DataGridInactive.Rows[r].Cells[10].Value.ToString();
-            form1.txtPassword.Text = DataGridInactive.Rows[r].Cells[11].Value.ToString();
+            DialogResult result = MessageBox.Show("Are you sure you want to move this student?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
-            form1.lblId.Text = r.ToString();
-            switch (DataGridInactive.Rows[r].Cells[1].Value)
-            {
-                case "Male":
-                    form1.radMale.Checked = true;
-                    break;
-                default:
-                    form1.radFemale.Checked = true;
-                    break;
-            }
 
-            foreach (DataGridViewRow row in DataGridInactive.Rows)
+
+            if (result == DialogResult.Yes)
             {
-                if (!row.IsNewRow)
+                if (dgvResultIn.CurrentRow != null)
                 {
-                    string cellValue = row.Cells[2].Value?.ToString();
-                    if (!string.IsNullOrEmpty(cellValue))
+                    Mylogs logs = new Mylogs();
+                    logs.insertLog(Props.CurrentUser, "Transferred a inactive Student in the active list.");
+
+                    int selectedRowIndex = dgvResultIn.CurrentRow.Index;
+
+
+                    MoveStudentBetweenSheets(1, 0, selectedRowIndex);
+                    LoadFileFromExcelInactive();
+                    Form2 form2 = Application.OpenForms.OfType<Form2>().FirstOrDefault();
+                    if (form2 != null)
                     {
-                        string[] lines = cellValue.Split(' ');
+                        form2.LoadFileFromExcel();
 
-                        foreach (string line in lines)
-                        {
-                            if (line == "Volleyball")
-                            {
-                                form1.chkVolleyball.Checked = true;
-                            }
-                            if (line == "Basketball")
-                            {
-                                form1.chkBasketball.Checked = true;
-                            }
-                            if (line == "Badminton")
-                            {
-                                form1.chkBadminton.Checked = true;
-                            }
-                            if (line == "Tennis")
-                            {
-                                form1.chkTennis.Checked = true;
-                            }
-                            if (line == "Soccer")
-                            {
-                                form1.chkSoccer.Checked = true;
-                            }
-                            if (line == "Baseball")
-                            {
-                                form1.chkBaseball.Checked = true;
-                            }
-
-
-                        }
                     }
                 }
             }
-            this.Hide();
-            form1.Show();
-            form1.btnUpdate.Visible = true;
-            form1.btnDisplayall.Visible = false;
-            form1.btnAdddata.Visible = false;
+
         }
 
-        private void btnReactivate_Click(object sender, EventArgs e)
+        private void btnSearch2_Click(object sender, EventArgs e)
         {
-            int rowIndex = DataGridInactive.CurrentCell.RowIndex;
-            string studentName = DataGridInactive.Rows[rowIndex].Cells[0].Value.ToString();
+            Mylogs logs = new Mylogs();
+            logs.insertLog(Props.CurrentUser, "Searched in the Inactive list.");
 
-            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
-            Worksheet sheet = workbook.Worksheets[0];
-            int totalRows = sheet.Rows.Length;
+            string searchText = txtSearch2.Text.ToLower();
+            bool foundMatch = false;
 
-            for (int i = 2; i <= totalRows; i++) // Start at 2 to skip headers
+            if (string.IsNullOrEmpty(txtSearch2.Text))
             {
-                if (sheet.Range[i, 1].Value == studentName)
+                MessageBox.Show("Please enter the cell you want to search.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+
+
+            foreach (DataGridViewRow row in dgvResultIn.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
                 {
-                    sheet.Range[i, 13].Value = "1"; // Set Status to Active
-                    break;
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Split(' ').Contains(searchText))
+                    {
+                        cell.Style.BackColor = Color.Yellow;
+                        foundMatch = true;
+                    }
+                    else
+                    {
+                        cell.Style.BackColor = dgvResultIn.DefaultCellStyle.BackColor;
+                    }
                 }
             }
 
-            workbook.SaveToFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx", ExcelVersion.Version2016);
-            MessageBox.Show("Student reactivated.");
+            if (foundMatch)
+            {
+                MessageBox.Show("Matching cells have been highlighted.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No matching cells found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
 
-            LoadInactiveStudents();
+        private void txtSearch2_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtSearch2.Text.ToLower();
+
+            foreach (DataGridViewRow row in dgvResultIn.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    cell.Style.BackColor = dgvResultIn.DefaultCellStyle.BackColor;
+                }
+            }
+        }
+
+        private void btnActivateStud_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to move this student?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+
+
+            if (result == DialogResult.Yes)
+            {
+                if (dgvResultIn.CurrentRow != null)
+                {
+                    Mylogs logs =   new Mylogs();
+                    logs.insertLog(Props.CurrentUser, "Transferred a inactive Student in the active list.");
+
+                    int selectedRowIndex = dgvResultIn.CurrentRow.Index;
+
+
+                    MoveStudentBetweenSheets(1, 0, selectedRowIndex);
+                    LoadFileFromExcelInactive();
+                    Form2 form2 = Application.OpenForms.OfType<Form2>().FirstOrDefault();
+                    if (form2 != null)
+                    {
+                        form2.LoadFileFromExcel();
+
+                    }
+                }
+            }
         }
     }
 }

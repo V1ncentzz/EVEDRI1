@@ -33,44 +33,42 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvResult = new System.Windows.Forms.DataGridView();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnDeteteRow = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblReturnHome = new System.Windows.Forms.Label();
+            this.btnAddUser = new Guna.UI2.WinForms.Guna2Button();
+            this.InactiveStud = new Guna.UI2.WinForms.Guna2Button();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnClosewindow = new System.Windows.Forms.PictureBox();
-            this.btnMaximize = new System.Windows.Forms.PictureBox();
-            this.btnInactive = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
             this.SuspendLayout();
             // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(35, 176);
+            this.txtSearch.Location = new System.Drawing.Point(554, 112);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(275, 40);
+            this.txtSearch.Size = new System.Drawing.Size(383, 50);
             this.txtSearch.TabIndex = 16;
             // 
-            // dataGridView1
+            // dgvResult
             // 
-            this.dataGridView1.AllowUserToResizeRows = false;
+            this.dgvResult.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvResult.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvResult.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvResult.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvResult.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvResult.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvResult.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -78,9 +76,9 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeight = 30;
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.dgvResult.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvResult.ColumnHeadersHeight = 30;
+            this.dgvResult.Cursor = System.Windows.Forms.Cursors.IBeam;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -88,13 +86,13 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.MidnightBlue;
-            this.dataGridView1.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 222);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvResult.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvResult.EnableHeadersVisualStyles = false;
+            this.dgvResult.GridColor = System.Drawing.Color.MidnightBlue;
+            this.dgvResult.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.dgvResult.Location = new System.Drawing.Point(21, 190);
+            this.dgvResult.Name = "dgvResult";
+            this.dgvResult.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -102,23 +100,23 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1633, 657);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dgvResult.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvResult.RowHeadersWidth = 51;
+            this.dgvResult.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvResult.Size = new System.Drawing.Size(1633, 650);
+            this.dgvResult.TabIndex = 14;
+            this.dgvResult.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvResult_CellContentDoubleClick);
             // 
             // guna2GradientPanel1
             // 
-            this.guna2GradientPanel1.Controls.Add(this.btnInactive);
-            this.guna2GradientPanel1.Controls.Add(this.btnDeteteRow);
+            this.guna2GradientPanel1.Controls.Add(this.label1);
+            this.guna2GradientPanel1.Controls.Add(this.dgvResult);
+            this.guna2GradientPanel1.Controls.Add(this.lblReturnHome);
+            this.guna2GradientPanel1.Controls.Add(this.btnAddUser);
+            this.guna2GradientPanel1.Controls.Add(this.InactiveStud);
             this.guna2GradientPanel1.Controls.Add(this.btnSearch);
-            this.guna2GradientPanel1.Controls.Add(this.btnMinimize);
             this.guna2GradientPanel1.Controls.Add(this.btnClosewindow);
             this.guna2GradientPanel1.Controls.Add(this.txtSearch);
-            this.guna2GradientPanel1.Controls.Add(this.btnMaximize);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.GhostWhite;
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.GhostWhite;
@@ -127,23 +125,58 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1697, 891);
             this.guna2GradientPanel1.TabIndex = 20;
             // 
-            // btnDeteteRow
+            // label1
             // 
-            this.btnDeteteRow.BackColor = System.Drawing.Color.White;
-            this.btnDeteteRow.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteteRow.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDeteteRow.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDeteteRow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDeteteRow.FillColor = System.Drawing.Color.White;
-            this.btnDeteteRow.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDeteteRow.ForeColor = System.Drawing.Color.White;
-            this.btnDeteteRow.Image = global::EVEDRI1.Properties.Resources.bin;
-            this.btnDeteteRow.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnDeteteRow.Location = new System.Drawing.Point(680, 166);
-            this.btnDeteteRow.Name = "btnDeteteRow";
-            this.btnDeteteRow.Size = new System.Drawing.Size(44, 40);
-            this.btnDeteteRow.TabIndex = 21;
-            this.btnDeteteRow.Click += new System.EventHandler(this.btnDeteteRow_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(450, 124);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 25);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Search";
+            // 
+            // lblReturnHome
+            // 
+            this.lblReturnHome.AutoSize = true;
+            this.lblReturnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReturnHome.Location = new System.Drawing.Point(27, 125);
+            this.lblReturnHome.Name = "lblReturnHome";
+            this.lblReturnHome.Size = new System.Drawing.Size(123, 24);
+            this.lblReturnHome.TabIndex = 24;
+            this.lblReturnHome.Text = "Return Home";
+            this.lblReturnHome.Click += new System.EventHandler(this.lblReturnHome_Click);
+            // 
+            // btnAddUser
+            // 
+            this.btnAddUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddUser.FillColor = System.Drawing.Color.SteelBlue;
+            this.btnAddUser.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddUser.ForeColor = System.Drawing.Color.White;
+            this.btnAddUser.Location = new System.Drawing.Point(997, 112);
+            this.btnAddUser.Name = "btnAddUser";
+            this.btnAddUser.Size = new System.Drawing.Size(154, 50);
+            this.btnAddUser.TabIndex = 23;
+            this.btnAddUser.Text = "Add User";
+            this.btnAddUser.Click += new System.EventHandler(this.btnAddUser_Click);
+            // 
+            // InactiveStud
+            // 
+            this.InactiveStud.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.InactiveStud.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.InactiveStud.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.InactiveStud.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.InactiveStud.FillColor = System.Drawing.Color.SteelBlue;
+            this.InactiveStud.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InactiveStud.ForeColor = System.Drawing.Color.White;
+            this.InactiveStud.Location = new System.Drawing.Point(1157, 112);
+            this.InactiveStud.Name = "InactiveStud";
+            this.InactiveStud.Size = new System.Drawing.Size(171, 50);
+            this.InactiveStud.TabIndex = 22;
+            this.InactiveStud.Text = "inactive";
+            this.InactiveStud.Click += new System.EventHandler(this.InactiveStud_Click);
             // 
             // btnSearch
             // 
@@ -157,56 +190,21 @@
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::EVEDRI1.Properties.Resources.search1;
             this.btnSearch.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnSearch.Location = new System.Drawing.Point(307, 176);
+            this.btnSearch.Location = new System.Drawing.Point(943, 112);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(48, 40);
+            this.btnSearch.Size = new System.Drawing.Size(48, 50);
             this.btnSearch.TabIndex = 20;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::EVEDRI1.Properties.Resources.Minimize_Window;
-            this.btnMinimize.Location = new System.Drawing.Point(790, 58);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinimize.TabIndex = 13;
-            this.btnMinimize.TabStop = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnClosewindow
             // 
             this.btnClosewindow.Image = global::EVEDRI1.Properties.Resources.Close_Window;
-            this.btnClosewindow.Location = new System.Drawing.Point(929, 58);
+            this.btnClosewindow.Location = new System.Drawing.Point(1624, 26);
             this.btnClosewindow.Name = "btnClosewindow";
             this.btnClosewindow.Size = new System.Drawing.Size(30, 30);
             this.btnClosewindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnClosewindow.TabIndex = 11;
             this.btnClosewindow.TabStop = false;
-            this.btnClosewindow.Click += new System.EventHandler(this.btnClosewindow_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Image = global::EVEDRI1.Properties.Resources.Maximize_Window;
-            this.btnMaximize.Location = new System.Drawing.Point(855, 58);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMaximize.TabIndex = 12;
-            this.btnMaximize.TabStop = false;
-            // 
-            // btnInactive
-            // 
-            this.btnInactive.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnInactive.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnInactive.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnInactive.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnInactive.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnInactive.ForeColor = System.Drawing.Color.White;
-            this.btnInactive.Location = new System.Drawing.Point(332, 50);
-            this.btnInactive.Name = "btnInactive";
-            this.btnInactive.Size = new System.Drawing.Size(239, 68);
-            this.btnInactive.TabIndex = 22;
-            this.btnInactive.Text = "inactive";
-            this.btnInactive.Click += new System.EventHandler(this.btnInactive_Click);
             // 
             // Form2
             // 
@@ -214,34 +212,31 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(1697, 891);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).EndInit();
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.TextBox txtSearch;
-        public System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox btnMinimize;
-        private System.Windows.Forms.PictureBox btnMaximize;
+        public System.Windows.Forms.DataGridView dgvResult;
         private System.Windows.Forms.PictureBox btnClosewindow;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
         private Guna.UI2.WinForms.Guna2Button btnSearch;
-        private Guna.UI2.WinForms.Guna2Button btnDeteteRow;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler2;
-        private Guna.UI2.WinForms.Guna2Button btnInactive;
+        private Guna.UI2.WinForms.Guna2Button InactiveStud;
+        private Guna.UI2.WinForms.Guna2Button btnAddUser;
+        private System.Windows.Forms.Label lblReturnHome;
+        private System.Windows.Forms.Label label1;
     }
 }

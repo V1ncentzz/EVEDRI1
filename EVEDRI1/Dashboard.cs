@@ -1,187 +1,141 @@
-﻿using Spire.Xls;
+﻿using System.IO;
+using Spire.Xls;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
+
 
 namespace EVEDRI1
 {
     public partial class Dashboard : Form
     {
-        //Workbook book = new Workbook();
-        private Workbook workbook;
-        private Worksheet worksheet;
-        private string excelFilePath = @"C:\Users\HF\Documents\Ff\Book1.xlsx";
-        string name = string.Empty;
-        private Form currentForm = null;
-
-        int activeCount = 0;
-        int inactiveCount = 0;
-        int maleCount = 0;
-        int femaleCount = 0;
-        int volleyballCount = 0;
-        int basketballCount = 0;
-        int tennisCount = 0;
-        int soccerCount = 0;
-        int badmintonCount = 0;
-        int baseballCount = 0;
-        int bsitCount = 0;
-        int bstmCount = 0;
-        int beedCount = 0;
-        int orangeCount = 0;
-        int blueCount = 0;
-        int yellowCount = 0;
-        int redCount = 0;
-
         public Dashboard()
         {
             InitializeComponent();
-            Loadexceldata();
-            Count();
-            picUser.Visible = true;
-            lblUserfulname.Visible = true;
-            pnlsettings.Visible = false;
 
-        }
 
-        private void Loadexceldata()
-        {
-            try
+            if (!string.IsNullOrEmpty(Props.ProfilePath) && File.Exists(Props.ProfilePath))
             {
-                Workbook workbook = new Workbook();
-                workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
-                Worksheet worksheet = workbook.Worksheets[0];
+                pcbProfile.Image = Image.FromFile(Props.ProfilePath);
             }
-            catch(Exception ex)
+            else
             {
-                MessageBox.Show($"Error loading Excel file: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                pcbProfile.Image = null;
             }
-            
-        }
 
-        private void Count()
-        {
-            Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
-            if (worksheet != null)
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+
+            Worksheet activeSheet = book.Worksheets[0];
+            Worksheet inactiveSheet = book.Worksheets[1];
+
+            int activeCount = activeSheet.LastRow - 1;
+            int inactiveCount = inactiveSheet.LastRow - 1;
+
+            lblActiveNum.Text = activeCount.ToString();
+            lblInactiveNum.Text = inactiveCount.ToString();
+
+            int male = 0, female = 0;
+            int orange = 0, blue = 0, yellow = 0, red = 0;
+            int basketball = 0, volleyball = 0, badminton = 0, tennis = 0, soccer = 0, baseball = 0;
+            int bsit = 0, bstm = 0, beed = 0;
+
+            void CountFromSheet(Worksheet sheet)
             {
-                int lastRow = worksheet.LastRow;
-                if (lastRow < 2) return;
-
-                for (int i = 2; i <= lastRow; i++)
+                for (int i = 2; i <= sheet.LastRow; i++)
                 {
-                    string status = worksheet.GetText(i, 1)?.Trim();
-                    if (string.Equals(status, "Active", StringComparison.OrdinalIgnoreCase)) activeCount++;
-                    else if (string.Equals(status, "Inactive", StringComparison.OrdinalIgnoreCase)) inactiveCount++;
 
-                    string gender = worksheet.GetText(i, 2)?.Trim();
-                    if (string.Equals(gender, "Male", StringComparison.OrdinalIgnoreCase)) maleCount++;
-                    else if (string.Equals(gender, "Female", StringComparison.OrdinalIgnoreCase)) femaleCount++;
+                    string gender = sheet.Range[i, 2].Text.ToLower();
+                    if (gender == "male") male++;
+                    else if (gender == "female") female++;
 
-                    // Count Hobbies (inside the loop)
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Volleyball", StringComparison.OrdinalIgnoreCase)) volleyballCount++;
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Basketball", StringComparison.OrdinalIgnoreCase)) basketballCount++;
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Tennis", StringComparison.OrdinalIgnoreCase)) tennisCount++;
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Soccer", StringComparison.OrdinalIgnoreCase)) soccerCount++;
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Badminton", StringComparison.OrdinalIgnoreCase)) badmintonCount++;
-                    if (string.Equals(worksheet.GetText(i, 3)?.Trim(), "Baseball", StringComparison.OrdinalIgnoreCase)) baseballCount++;
+                    string color = sheet.Range[i, 8].Text.ToLower();
+                    if (color == "orange") orange++;
+                    if (color == "blue") blue++;
+                    if (color == "yellow")  yellow++;
+                    if (color == "red") red++;
 
-                    string course = worksheet.GetText(i, 7)?.Trim();
-                    if (string.Equals(course, "BSIT", StringComparison.OrdinalIgnoreCase)) bsitCount++;
-                    else if (string.Equals(course, "BSTM", StringComparison.OrdinalIgnoreCase)) bstmCount++;
-                    else if (string.Equals(course, "BEED", StringComparison.OrdinalIgnoreCase)) beedCount++;
+               
+                    string values = sheet.Range[i, 3].Value;
+                    string[] data = values.Split(' ');
+                    foreach (var hobby in data)
+                    {
+                        if (hobby.Contains("Volleyball")) volleyball++;
+                        if (hobby.Contains("Tennis")) tennis++;
+                        if (hobby.Contains("Badminton")) badminton++;
+                        if (hobby.Contains("Basketball")) basketball++;
+                        if (hobby.Contains("Soccer")) soccer++;
+                        if (hobby.Contains("Baseball")) baseball++;
+                    }
 
-                    if (string.Equals(worksheet.GetText(i, 6)?.Trim(), "Orange", StringComparison.OrdinalIgnoreCase)) orangeCount++;
-                    if (string.Equals(worksheet.GetText(i, 6)?.Trim(), "Blue", StringComparison.OrdinalIgnoreCase)) blueCount++;
-                    if (string.Equals(worksheet.GetText(i, 6)?.Trim(), "Yellow", StringComparison.OrdinalIgnoreCase)) yellowCount++;
-                    if (string.Equals(worksheet.GetText(i, 6)?.Trim(), "Red", StringComparison.OrdinalIgnoreCase)) redCount++;
+
+
+                    string course = sheet.Range[i, 12].Text.ToLower();
+                    if (course == "bsit") bsit++;
+                    else if (course == "bstm") bstm++;
+                    else if (course == "beed") beed++;
                 }
-
-                lblActivestudentsCount.Text = activeCount.ToString();
-                lblInactivestudentscount.Text = inactiveCount.ToString();
-                lblMaleCount.Text = maleCount.ToString();
-                lblFemaleCount.Text = femaleCount.ToString();
-                lblVolleyballCount.Text = volleyballCount.ToString();
-                lblBaseballCount.Text = basketballCount.ToString();
-                lblTennisCount.Text = tennisCount.ToString();
-                lblSoccerCount.Text = soccerCount.ToString();
-                lblBaseballCount.Text = badmintonCount.ToString();
-                lblBaseballCount.Text = baseballCount.ToString();
-                lblBsitCount.Text = bsitCount.ToString();
-                lblBstmCount.Text = bstmCount.ToString();
-                lblBeedCount.Text = beedCount.ToString();
-                lblOrangeCount.Text = orangeCount.ToString();
-                lblBlueCount.Text = blueCount.ToString();
-                lblYellowCount.Text = yellowCount.ToString();
-                lblRedCount.Text = redCount.ToString();
             }
+
+            CountFromSheet(activeSheet);
+            CountFromSheet(inactiveSheet);
+
+            // Assign values to labels
+            lblMaleNum.Text = male.ToString();
+            lblFemaleNum.Text = female.ToString();
+
+            lblOrangeNum.Text = orange.ToString();
+            lblBlueNum.Text = blue.ToString();
+            lblRedNum.Text = red.ToString();
+            lblYellowNum.Text = yellow.ToString();
+
+            lblVolleyballNum.Text = volleyball.ToString();
+            lblTennisNum.Text = tennis.ToString();
+            lblBadmintonNum.Text = badminton.ToString();
+            lblBasketballNum.Text = basketball.ToString();
+            lblSoccerNum.Text = soccer.ToString();
+            lblBaseballNum.Text = baseball.ToString();
+
+            lblBsitNum.Text = bsit.ToString();
+            lblBstmNum.Text = bstm.ToString();
+            lblBeedNum.Text = beed.ToString();
+
+
+            lblName.Text = Props.DisplayName;
+            lblDate.Text = DateTime.Now.ToString("MM/dd/yyyy");
         }
 
-
-        private void btnOptions_Click(object sender, EventArgs e)
+        private void btnActive_Click(object sender, EventArgs e)
         {
-            Sidebartranstion.Start();
-            picUser.Visible = false;
-            lblUserfulname.Visible = false;
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
         }
 
-        private void btnUpload_Click(object sender, EventArgs e)
+        private void btnInactive_Click(object sender, EventArgs e)
         {
-            pnlsettings.Visible = true;
-        }
-
-        private void btnCLose_Click(object sender, EventArgs e)
-        {
-            pnlsettings.Visible = false;
-        }
-
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        
-
-        private void btnClosewindow_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnActivestudent_Click(object sender, EventArgs e)
-        {
-           
+            Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
         }
 
         private void btnLogs_Click(object sender, EventArgs e)
         {
-            
+            Logs log = new Logs();
+            log.Show();
+            this.Hide();
         }
-
-        private void btnfromafile_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                txtPicture.Text = openFileDialog.FileName;
-            }
-        }
-
-        private void pnllDashboard_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Login login = new Login();
             login.Show();
+            this.Hide();
+        }
+
+        private void btnClosewindow_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
 
@@ -191,5 +145,12 @@ namespace EVEDRI1
             form1.Show();
             this.Hide();
         }
-
+    }
 }
+
+
+
+
+
+    
+

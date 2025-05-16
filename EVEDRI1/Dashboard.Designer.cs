@@ -29,54 +29,51 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblRedCount = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblOrange = new System.Windows.Forms.Label();
-            this.lblOrangeCount = new System.Windows.Forms.Label();
-            this.lblYellowCount = new System.Windows.Forms.Label();
             this.lblRed = new System.Windows.Forms.Label();
             this.lblBlue = new System.Windows.Forms.Label();
-            this.lblBlueCount = new System.Windows.Forms.Label();
             this.lblYellow = new System.Windows.Forms.Label();
-            this.lblBaseballCount = new System.Windows.Forms.Label();
+            this.lblBaseballNum = new System.Windows.Forms.Label();
             this.lblBaseball = new System.Windows.Forms.Label();
-            this.lblSoccerCount = new System.Windows.Forms.Label();
+            this.lblSoccerNum = new System.Windows.Forms.Label();
             this.lblSoccer = new System.Windows.Forms.Label();
-            this.lblBasketballCount = new System.Windows.Forms.Label();
+            this.lblBasketballNum = new System.Windows.Forms.Label();
             this.lblBasketball = new System.Windows.Forms.Label();
-            this.lblTennisCount = new System.Windows.Forms.Label();
+            this.lblTennisNum = new System.Windows.Forms.Label();
             this.lblTennis = new System.Windows.Forms.Label();
-            this.lblVolleyballCount = new System.Windows.Forms.Label();
+            this.lblVolleyballNum = new System.Windows.Forms.Label();
             this.lblVolleyball = new System.Windows.Forms.Label();
-            this.lblBeedCount = new System.Windows.Forms.Label();
+            this.lblBeedNum = new System.Windows.Forms.Label();
             this.lblBeed = new System.Windows.Forms.Label();
-            this.lblBstmCount = new System.Windows.Forms.Label();
+            this.lblBstmNum = new System.Windows.Forms.Label();
             this.lblBstm = new System.Windows.Forms.Label();
-            this.lblBsitCount = new System.Windows.Forms.Label();
+            this.lblBsitNum = new System.Windows.Forms.Label();
             this.lblBsit = new System.Windows.Forms.Label();
-            this.lblFemaleCount = new System.Windows.Forms.Label();
-            this.lblMaleCount = new System.Windows.Forms.Label();
+            this.lblFemaleNum = new System.Windows.Forms.Label();
+            this.lblMaleNum = new System.Windows.Forms.Label();
             this.lblFemale = new System.Windows.Forms.Label();
             this.lblMale = new System.Windows.Forms.Label();
-            this.lblInactivestudentscount = new System.Windows.Forms.Label();
+            this.lblInactiveNum = new System.Windows.Forms.Label();
             this.lblInactivestudents = new System.Windows.Forms.Label();
-            this.lblActivestudentsCount = new System.Windows.Forms.Label();
+            this.lblActiveNum = new System.Windows.Forms.Label();
             this.lblActivestudents = new System.Windows.Forms.Label();
             this.Sidebartranstion = new System.Windows.Forms.Timer(this.components);
-            this.lblBadmintonCount = new System.Windows.Forms.Label();
+            this.lblBadmintonNum = new System.Windows.Forms.Label();
             this.lblBadminton = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblUserfulname = new System.Windows.Forms.Label();
-            this.pnlsettings = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnCLose = new Guna.UI2.WinForms.Guna2Button();
-            this.btnfromafile = new Guna.UI2.WinForms.Guna2Button();
-            this.txtPicture = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblRedNum = new System.Windows.Forms.Label();
+            this.lblYellowNum = new System.Windows.Forms.Label();
+            this.lblBlueNum = new System.Windows.Forms.Label();
+            this.lblOrangeNum = new System.Windows.Forms.Label();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.lblDate = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -86,22 +83,19 @@
             this.guna2GradientPanel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClosewindow = new System.Windows.Forms.PictureBox();
-            this.btnMaximize = new System.Windows.Forms.PictureBox();
-            this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnAddstudent = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnActivestudent = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnInactivestudent = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.lblProfPathHolder = new System.Windows.Forms.Label();
+            this.btnActive = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnInactive = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnLogs = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.btnUpload = new Guna.UI2.WinForms.Guna2Button();
-            this.picUser = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pcbProfile = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnDashboard = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.pnlsettings.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2GradientPanel9.SuspendLayout();
             this.guna2GradientPanel8.SuspendLayout();
@@ -114,24 +108,12 @@
             this.guna2GradientPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
             this.guna2GradientPanel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbProfile)).BeginInit();
             this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblRedCount
-            // 
-            this.lblRedCount.AutoSize = true;
-            this.lblRedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRedCount.Location = new System.Drawing.Point(609, 116);
-            this.lblRedCount.Name = "lblRedCount";
-            this.lblRedCount.Size = new System.Drawing.Size(33, 25);
-            this.lblRedCount.TabIndex = 15;
-            this.lblRedCount.Text = "---";
             // 
             // label6
             // 
@@ -153,31 +135,11 @@
             this.lblOrange.TabIndex = 8;
             this.lblOrange.Text = "Orange";
             // 
-            // lblOrangeCount
-            // 
-            this.lblOrangeCount.AutoSize = true;
-            this.lblOrangeCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrangeCount.Location = new System.Drawing.Point(262, 75);
-            this.lblOrangeCount.Name = "lblOrangeCount";
-            this.lblOrangeCount.Size = new System.Drawing.Size(33, 25);
-            this.lblOrangeCount.TabIndex = 9;
-            this.lblOrangeCount.Text = "---";
-            // 
-            // lblYellowCount
-            // 
-            this.lblYellowCount.AutoSize = true;
-            this.lblYellowCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYellowCount.Location = new System.Drawing.Point(609, 56);
-            this.lblYellowCount.Name = "lblYellowCount";
-            this.lblYellowCount.Size = new System.Drawing.Size(33, 25);
-            this.lblYellowCount.TabIndex = 13;
-            this.lblYellowCount.Text = "---";
-            // 
             // lblRed
             // 
             this.lblRed.AutoSize = true;
             this.lblRed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRed.Location = new System.Drawing.Point(394, 116);
+            this.lblRed.Location = new System.Drawing.Point(394, 128);
             this.lblRed.Name = "lblRed";
             this.lblRed.Size = new System.Drawing.Size(51, 25);
             this.lblRed.TabIndex = 14;
@@ -193,35 +155,25 @@
             this.lblBlue.TabIndex = 10;
             this.lblBlue.Text = "Blue";
             // 
-            // lblBlueCount
-            // 
-            this.lblBlueCount.AutoSize = true;
-            this.lblBlueCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBlueCount.Location = new System.Drawing.Point(262, 128);
-            this.lblBlueCount.Name = "lblBlueCount";
-            this.lblBlueCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBlueCount.TabIndex = 11;
-            this.lblBlueCount.Text = "---";
-            // 
             // lblYellow
             // 
             this.lblYellow.AutoSize = true;
             this.lblYellow.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYellow.Location = new System.Drawing.Point(394, 56);
+            this.lblYellow.Location = new System.Drawing.Point(394, 75);
             this.lblYellow.Name = "lblYellow";
             this.lblYellow.Size = new System.Drawing.Size(76, 25);
             this.lblYellow.TabIndex = 12;
             this.lblYellow.Text = "Yellow";
             // 
-            // lblBaseballCount
+            // lblBaseballNum
             // 
-            this.lblBaseballCount.AutoSize = true;
-            this.lblBaseballCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBaseballCount.Location = new System.Drawing.Point(609, 174);
-            this.lblBaseballCount.Name = "lblBaseballCount";
-            this.lblBaseballCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBaseballCount.TabIndex = 16;
-            this.lblBaseballCount.Text = "---";
+            this.lblBaseballNum.AutoSize = true;
+            this.lblBaseballNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBaseballNum.Location = new System.Drawing.Point(609, 174);
+            this.lblBaseballNum.Name = "lblBaseballNum";
+            this.lblBaseballNum.Size = new System.Drawing.Size(33, 25);
+            this.lblBaseballNum.TabIndex = 16;
+            this.lblBaseballNum.Text = "---";
             // 
             // lblBaseball
             // 
@@ -233,15 +185,15 @@
             this.lblBaseball.TabIndex = 15;
             this.lblBaseball.Text = "Baseball";
             // 
-            // lblSoccerCount
+            // lblSoccerNum
             // 
-            this.lblSoccerCount.AutoSize = true;
-            this.lblSoccerCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoccerCount.Location = new System.Drawing.Point(609, 121);
-            this.lblSoccerCount.Name = "lblSoccerCount";
-            this.lblSoccerCount.Size = new System.Drawing.Size(33, 25);
-            this.lblSoccerCount.TabIndex = 14;
-            this.lblSoccerCount.Text = "---";
+            this.lblSoccerNum.AutoSize = true;
+            this.lblSoccerNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoccerNum.Location = new System.Drawing.Point(609, 121);
+            this.lblSoccerNum.Name = "lblSoccerNum";
+            this.lblSoccerNum.Size = new System.Drawing.Size(33, 25);
+            this.lblSoccerNum.TabIndex = 14;
+            this.lblSoccerNum.Text = "---";
             // 
             // lblSoccer
             // 
@@ -253,15 +205,15 @@
             this.lblSoccer.TabIndex = 13;
             this.lblSoccer.Text = "Soccer";
             // 
-            // lblBasketballCount
+            // lblBasketballNum
             // 
-            this.lblBasketballCount.AutoSize = true;
-            this.lblBasketballCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBasketballCount.Location = new System.Drawing.Point(609, 74);
-            this.lblBasketballCount.Name = "lblBasketballCount";
-            this.lblBasketballCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBasketballCount.TabIndex = 12;
-            this.lblBasketballCount.Text = "---";
+            this.lblBasketballNum.AutoSize = true;
+            this.lblBasketballNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBasketballNum.Location = new System.Drawing.Point(609, 74);
+            this.lblBasketballNum.Name = "lblBasketballNum";
+            this.lblBasketballNum.Size = new System.Drawing.Size(33, 25);
+            this.lblBasketballNum.TabIndex = 12;
+            this.lblBasketballNum.Text = "---";
             // 
             // lblBasketball
             // 
@@ -273,15 +225,15 @@
             this.lblBasketball.TabIndex = 11;
             this.lblBasketball.Text = "Basketball";
             // 
-            // lblTennisCount
+            // lblTennisNum
             // 
-            this.lblTennisCount.AutoSize = true;
-            this.lblTennisCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTennisCount.Location = new System.Drawing.Point(262, 129);
-            this.lblTennisCount.Name = "lblTennisCount";
-            this.lblTennisCount.Size = new System.Drawing.Size(33, 25);
-            this.lblTennisCount.TabIndex = 8;
-            this.lblTennisCount.Text = "---";
+            this.lblTennisNum.AutoSize = true;
+            this.lblTennisNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTennisNum.Location = new System.Drawing.Point(262, 129);
+            this.lblTennisNum.Name = "lblTennisNum";
+            this.lblTennisNum.Size = new System.Drawing.Size(33, 25);
+            this.lblTennisNum.TabIndex = 8;
+            this.lblTennisNum.Text = "---";
             // 
             // lblTennis
             // 
@@ -293,15 +245,15 @@
             this.lblTennis.TabIndex = 7;
             this.lblTennis.Text = "Tennis";
             // 
-            // lblVolleyballCount
+            // lblVolleyballNum
             // 
-            this.lblVolleyballCount.AutoSize = true;
-            this.lblVolleyballCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVolleyballCount.Location = new System.Drawing.Point(262, 79);
-            this.lblVolleyballCount.Name = "lblVolleyballCount";
-            this.lblVolleyballCount.Size = new System.Drawing.Size(33, 25);
-            this.lblVolleyballCount.TabIndex = 6;
-            this.lblVolleyballCount.Text = "---";
+            this.lblVolleyballNum.AutoSize = true;
+            this.lblVolleyballNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVolleyballNum.Location = new System.Drawing.Point(262, 79);
+            this.lblVolleyballNum.Name = "lblVolleyballNum";
+            this.lblVolleyballNum.Size = new System.Drawing.Size(33, 25);
+            this.lblVolleyballNum.TabIndex = 6;
+            this.lblVolleyballNum.Text = "---";
             // 
             // lblVolleyball
             // 
@@ -313,15 +265,15 @@
             this.lblVolleyball.TabIndex = 5;
             this.lblVolleyball.Text = "Volleyball";
             // 
-            // lblBeedCount
+            // lblBeedNum
             // 
-            this.lblBeedCount.AutoSize = true;
-            this.lblBeedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBeedCount.Location = new System.Drawing.Point(330, 191);
-            this.lblBeedCount.Name = "lblBeedCount";
-            this.lblBeedCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBeedCount.TabIndex = 10;
-            this.lblBeedCount.Text = "---";
+            this.lblBeedNum.AutoSize = true;
+            this.lblBeedNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBeedNum.Location = new System.Drawing.Point(330, 191);
+            this.lblBeedNum.Name = "lblBeedNum";
+            this.lblBeedNum.Size = new System.Drawing.Size(33, 25);
+            this.lblBeedNum.TabIndex = 10;
+            this.lblBeedNum.Text = "---";
             // 
             // lblBeed
             // 
@@ -333,15 +285,15 @@
             this.lblBeed.TabIndex = 9;
             this.lblBeed.Text = "BEED";
             // 
-            // lblBstmCount
+            // lblBstmNum
             // 
-            this.lblBstmCount.AutoSize = true;
-            this.lblBstmCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBstmCount.Location = new System.Drawing.Point(330, 136);
-            this.lblBstmCount.Name = "lblBstmCount";
-            this.lblBstmCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBstmCount.TabIndex = 8;
-            this.lblBstmCount.Text = "---";
+            this.lblBstmNum.AutoSize = true;
+            this.lblBstmNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBstmNum.Location = new System.Drawing.Point(330, 136);
+            this.lblBstmNum.Name = "lblBstmNum";
+            this.lblBstmNum.Size = new System.Drawing.Size(33, 25);
+            this.lblBstmNum.TabIndex = 8;
+            this.lblBstmNum.Text = "---";
             // 
             // lblBstm
             // 
@@ -353,15 +305,15 @@
             this.lblBstm.TabIndex = 7;
             this.lblBstm.Text = "BSTM";
             // 
-            // lblBsitCount
+            // lblBsitNum
             // 
-            this.lblBsitCount.AutoSize = true;
-            this.lblBsitCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBsitCount.Location = new System.Drawing.Point(330, 74);
-            this.lblBsitCount.Name = "lblBsitCount";
-            this.lblBsitCount.Size = new System.Drawing.Size(33, 25);
-            this.lblBsitCount.TabIndex = 6;
-            this.lblBsitCount.Text = "---";
+            this.lblBsitNum.AutoSize = true;
+            this.lblBsitNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBsitNum.Location = new System.Drawing.Point(330, 74);
+            this.lblBsitNum.Name = "lblBsitNum";
+            this.lblBsitNum.Size = new System.Drawing.Size(33, 25);
+            this.lblBsitNum.TabIndex = 6;
+            this.lblBsitNum.Text = "---";
             // 
             // lblBsit
             // 
@@ -373,25 +325,25 @@
             this.lblBsit.TabIndex = 5;
             this.lblBsit.Text = "BSIT";
             // 
-            // lblFemaleCount
+            // lblFemaleNum
             // 
-            this.lblFemaleCount.AutoSize = true;
-            this.lblFemaleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFemaleCount.Location = new System.Drawing.Point(317, 143);
-            this.lblFemaleCount.Name = "lblFemaleCount";
-            this.lblFemaleCount.Size = new System.Drawing.Size(53, 39);
-            this.lblFemaleCount.TabIndex = 6;
-            this.lblFemaleCount.Text = "---";
+            this.lblFemaleNum.AutoSize = true;
+            this.lblFemaleNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFemaleNum.Location = new System.Drawing.Point(317, 143);
+            this.lblFemaleNum.Name = "lblFemaleNum";
+            this.lblFemaleNum.Size = new System.Drawing.Size(53, 39);
+            this.lblFemaleNum.TabIndex = 6;
+            this.lblFemaleNum.Text = "---";
             // 
-            // lblMaleCount
+            // lblMaleNum
             // 
-            this.lblMaleCount.AutoSize = true;
-            this.lblMaleCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMaleCount.Location = new System.Drawing.Point(317, 73);
-            this.lblMaleCount.Name = "lblMaleCount";
-            this.lblMaleCount.Size = new System.Drawing.Size(53, 39);
-            this.lblMaleCount.TabIndex = 5;
-            this.lblMaleCount.Text = "---";
+            this.lblMaleNum.AutoSize = true;
+            this.lblMaleNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaleNum.Location = new System.Drawing.Point(317, 73);
+            this.lblMaleNum.Name = "lblMaleNum";
+            this.lblMaleNum.Size = new System.Drawing.Size(53, 39);
+            this.lblMaleNum.TabIndex = 5;
+            this.lblMaleNum.Text = "---";
             // 
             // lblFemale
             // 
@@ -415,16 +367,16 @@
             this.lblMale.TabIndex = 3;
             this.lblMale.Text = "Male";
             // 
-            // lblInactivestudentscount
+            // lblInactiveNum
             // 
-            this.lblInactivestudentscount.AutoSize = true;
-            this.lblInactivestudentscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInactivestudentscount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblInactivestudentscount.Location = new System.Drawing.Point(24, 91);
-            this.lblInactivestudentscount.Name = "lblInactivestudentscount";
-            this.lblInactivestudentscount.Size = new System.Drawing.Size(53, 39);
-            this.lblInactivestudentscount.TabIndex = 2;
-            this.lblInactivestudentscount.Text = "---";
+            this.lblInactiveNum.AutoSize = true;
+            this.lblInactiveNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInactiveNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblInactiveNum.Location = new System.Drawing.Point(24, 91);
+            this.lblInactiveNum.Name = "lblInactiveNum";
+            this.lblInactiveNum.Size = new System.Drawing.Size(53, 39);
+            this.lblInactiveNum.TabIndex = 2;
+            this.lblInactiveNum.Text = "---";
             // 
             // lblInactivestudents
             // 
@@ -437,16 +389,16 @@
             this.lblInactivestudents.TabIndex = 2;
             this.lblInactivestudents.Text = "Inactive Students";
             // 
-            // lblActivestudentsCount
+            // lblActiveNum
             // 
-            this.lblActivestudentsCount.AutoSize = true;
-            this.lblActivestudentsCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActivestudentsCount.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblActivestudentsCount.Location = new System.Drawing.Point(29, 91);
-            this.lblActivestudentsCount.Name = "lblActivestudentsCount";
-            this.lblActivestudentsCount.Size = new System.Drawing.Size(53, 39);
-            this.lblActivestudentsCount.TabIndex = 1;
-            this.lblActivestudentsCount.Text = "---";
+            this.lblActiveNum.AutoSize = true;
+            this.lblActiveNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActiveNum.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblActiveNum.Location = new System.Drawing.Point(29, 91);
+            this.lblActiveNum.Name = "lblActiveNum";
+            this.lblActiveNum.Size = new System.Drawing.Size(53, 39);
+            this.lblActiveNum.TabIndex = 1;
+            this.lblActiveNum.Text = "---";
             // 
             // lblActivestudents
             // 
@@ -463,15 +415,15 @@
             // 
             this.Sidebartranstion.Interval = 10;
             // 
-            // lblBadmintonCount
+            // lblBadmintonNum
             // 
-            this.lblBadmintonCount.AutoSize = true;
-            this.lblBadmintonCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBadmintonCount.Location = new System.Drawing.Point(267, 175);
-            this.lblBadmintonCount.Name = "lblBadmintonCount";
-            this.lblBadmintonCount.Size = new System.Drawing.Size(28, 24);
-            this.lblBadmintonCount.TabIndex = 10;
-            this.lblBadmintonCount.Text = "---";
+            this.lblBadmintonNum.AutoSize = true;
+            this.lblBadmintonNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBadmintonNum.Location = new System.Drawing.Point(267, 175);
+            this.lblBadmintonNum.Name = "lblBadmintonNum";
+            this.lblBadmintonNum.Size = new System.Drawing.Size(28, 24);
+            this.lblBadmintonNum.TabIndex = 10;
+            this.lblBadmintonNum.Text = "---";
             // 
             // lblBadminton
             // 
@@ -524,68 +476,17 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "DASHBOARD";
             // 
-            // lblUserfulname
+            // lblName
             // 
-            this.lblUserfulname.AutoSize = true;
-            this.lblUserfulname.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserfulname.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUserfulname.ForeColor = System.Drawing.Color.White;
-            this.lblUserfulname.Location = new System.Drawing.Point(72, 183);
-            this.lblUserfulname.Name = "lblUserfulname";
-            this.lblUserfulname.Size = new System.Drawing.Size(130, 24);
-            this.lblUserfulname.TabIndex = 6;
-            this.lblUserfulname.Text = "--------------------";
-            // 
-            // pnlsettings
-            // 
-            this.pnlsettings.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnlsettings.Controls.Add(this.btnCLose);
-            this.pnlsettings.Controls.Add(this.btnfromafile);
-            this.pnlsettings.Location = new System.Drawing.Point(23, 19);
-            this.pnlsettings.Name = "pnlsettings";
-            this.pnlsettings.Size = new System.Drawing.Size(172, 104);
-            this.pnlsettings.TabIndex = 6;
-            // 
-            // btnCLose
-            // 
-            this.btnCLose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCLose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCLose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCLose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCLose.FillColor = System.Drawing.Color.Crimson;
-            this.btnCLose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCLose.ForeColor = System.Drawing.Color.White;
-            this.btnCLose.Location = new System.Drawing.Point(3, 3);
-            this.btnCLose.Name = "btnCLose";
-            this.btnCLose.Size = new System.Drawing.Size(29, 20);
-            this.btnCLose.TabIndex = 9;
-            this.btnCLose.Text = "X";
-            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
-            // 
-            // btnfromafile
-            // 
-            this.btnfromafile.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnfromafile.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnfromafile.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnfromafile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnfromafile.FillColor = System.Drawing.Color.RoyalBlue;
-            this.btnfromafile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnfromafile.ForeColor = System.Drawing.Color.White;
-            this.btnfromafile.Location = new System.Drawing.Point(3, 29);
-            this.btnfromafile.Name = "btnfromafile";
-            this.btnfromafile.Size = new System.Drawing.Size(169, 48);
-            this.btnfromafile.TabIndex = 7;
-            this.btnfromafile.Text = "Upload file";
-            this.btnfromafile.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnfromafile.Click += new System.EventHandler(this.btnfromafile_Click);
-            // 
-            // txtPicture
-            // 
-            this.txtPicture.BackColor = System.Drawing.SystemColors.Info;
-            this.txtPicture.Location = new System.Drawing.Point(81, 207);
-            this.txtPicture.Name = "txtPicture";
-            this.txtPicture.Size = new System.Drawing.Size(114, 20);
-            this.txtPicture.TabIndex = 7;
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(71, 204);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(130, 24);
+            this.lblName.TabIndex = 6;
+            this.lblName.Text = "--------------------";
             // 
             // guna2GradientPanel1
             // 
@@ -595,13 +496,12 @@
             this.guna2GradientPanel1.BorderThickness = 1;
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel9);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel8);
+            this.guna2GradientPanel1.Controls.Add(this.lblDate);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel7);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel6);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel5);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel4);
             this.guna2GradientPanel1.Controls.Add(this.btnClosewindow);
-            this.guna2GradientPanel1.Controls.Add(this.btnMaximize);
-            this.guna2GradientPanel1.Controls.Add(this.btnMinimize);
             this.guna2GradientPanel1.Controls.Add(this.label1);
             this.guna2GradientPanel1.Controls.Add(this.guna2GradientPanel10);
             this.guna2GradientPanel1.CustomBorderColor = System.Drawing.Color.Transparent;
@@ -617,15 +517,15 @@
             this.guna2GradientPanel9.BorderColor = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel9.BorderRadius = 30;
             this.guna2GradientPanel9.BorderThickness = 5;
-            this.guna2GradientPanel9.Controls.Add(this.lblRedCount);
+            this.guna2GradientPanel9.Controls.Add(this.lblRedNum);
+            this.guna2GradientPanel9.Controls.Add(this.lblYellowNum);
+            this.guna2GradientPanel9.Controls.Add(this.lblBlueNum);
+            this.guna2GradientPanel9.Controls.Add(this.lblOrangeNum);
             this.guna2GradientPanel9.Controls.Add(this.label6);
             this.guna2GradientPanel9.Controls.Add(this.lblOrange);
             this.guna2GradientPanel9.Controls.Add(this.lblRed);
-            this.guna2GradientPanel9.Controls.Add(this.lblYellowCount);
-            this.guna2GradientPanel9.Controls.Add(this.lblOrangeCount);
             this.guna2GradientPanel9.Controls.Add(this.lblBlue);
             this.guna2GradientPanel9.Controls.Add(this.lblYellow);
-            this.guna2GradientPanel9.Controls.Add(this.lblBlueCount);
             this.guna2GradientPanel9.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.Lavender;
             this.guna2GradientPanel9.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
@@ -634,15 +534,51 @@
             this.guna2GradientPanel9.Size = new System.Drawing.Size(665, 215);
             this.guna2GradientPanel9.TabIndex = 18;
             // 
+            // lblRedNum
+            // 
+            this.lblRedNum.AutoSize = true;
+            this.lblRedNum.Location = new System.Drawing.Point(593, 130);
+            this.lblRedNum.Name = "lblRedNum";
+            this.lblRedNum.Size = new System.Drawing.Size(35, 13);
+            this.lblRedNum.TabIndex = 18;
+            this.lblRedNum.Text = "label7";
+            // 
+            // lblYellowNum
+            // 
+            this.lblYellowNum.AutoSize = true;
+            this.lblYellowNum.Location = new System.Drawing.Point(585, 76);
+            this.lblYellowNum.Name = "lblYellowNum";
+            this.lblYellowNum.Size = new System.Drawing.Size(35, 13);
+            this.lblYellowNum.TabIndex = 17;
+            this.lblYellowNum.Text = "label7";
+            // 
+            // lblBlueNum
+            // 
+            this.lblBlueNum.AutoSize = true;
+            this.lblBlueNum.Location = new System.Drawing.Point(260, 140);
+            this.lblBlueNum.Name = "lblBlueNum";
+            this.lblBlueNum.Size = new System.Drawing.Size(35, 13);
+            this.lblBlueNum.TabIndex = 16;
+            this.lblBlueNum.Text = "label7";
+            // 
+            // lblOrangeNum
+            // 
+            this.lblOrangeNum.AutoSize = true;
+            this.lblOrangeNum.Location = new System.Drawing.Point(260, 84);
+            this.lblOrangeNum.Name = "lblOrangeNum";
+            this.lblOrangeNum.Size = new System.Drawing.Size(35, 13);
+            this.lblOrangeNum.TabIndex = 15;
+            this.lblOrangeNum.Text = "label7";
+            // 
             // guna2GradientPanel8
             // 
             this.guna2GradientPanel8.BorderColor = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel8.BorderRadius = 30;
             this.guna2GradientPanel8.BorderThickness = 5;
-            this.guna2GradientPanel8.Controls.Add(this.lblBstmCount);
+            this.guna2GradientPanel8.Controls.Add(this.lblBstmNum);
             this.guna2GradientPanel8.Controls.Add(this.lblBstm);
-            this.guna2GradientPanel8.Controls.Add(this.lblBeedCount);
-            this.guna2GradientPanel8.Controls.Add(this.lblBsitCount);
+            this.guna2GradientPanel8.Controls.Add(this.lblBeedNum);
+            this.guna2GradientPanel8.Controls.Add(this.lblBsitNum);
             this.guna2GradientPanel8.Controls.Add(this.lblBeed);
             this.guna2GradientPanel8.Controls.Add(this.lblBsit);
             this.guna2GradientPanel8.Controls.Add(this.label4);
@@ -654,22 +590,32 @@
             this.guna2GradientPanel8.Size = new System.Drawing.Size(402, 243);
             this.guna2GradientPanel8.TabIndex = 18;
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(1161, 42);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(57, 25);
+            this.lblDate.TabIndex = 7;
+            this.lblDate.Text = "Date";
+            // 
             // guna2GradientPanel7
             // 
             this.guna2GradientPanel7.BorderColor = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel7.BorderRadius = 30;
             this.guna2GradientPanel7.BorderThickness = 5;
-            this.guna2GradientPanel7.Controls.Add(this.lblBaseballCount);
-            this.guna2GradientPanel7.Controls.Add(this.lblSoccerCount);
-            this.guna2GradientPanel7.Controls.Add(this.lblBasketballCount);
+            this.guna2GradientPanel7.Controls.Add(this.lblBaseballNum);
+            this.guna2GradientPanel7.Controls.Add(this.lblSoccerNum);
+            this.guna2GradientPanel7.Controls.Add(this.lblBasketballNum);
             this.guna2GradientPanel7.Controls.Add(this.lblSoccer);
             this.guna2GradientPanel7.Controls.Add(this.lblBaseball);
             this.guna2GradientPanel7.Controls.Add(this.lblBasketball);
-            this.guna2GradientPanel7.Controls.Add(this.lblBadmintonCount);
-            this.guna2GradientPanel7.Controls.Add(this.lblTennisCount);
+            this.guna2GradientPanel7.Controls.Add(this.lblBadmintonNum);
+            this.guna2GradientPanel7.Controls.Add(this.lblTennisNum);
             this.guna2GradientPanel7.Controls.Add(this.lblBadminton);
             this.guna2GradientPanel7.Controls.Add(this.lblTennis);
-            this.guna2GradientPanel7.Controls.Add(this.lblVolleyballCount);
+            this.guna2GradientPanel7.Controls.Add(this.lblVolleyballNum);
             this.guna2GradientPanel7.Controls.Add(this.lblVolleyball);
             this.guna2GradientPanel7.Controls.Add(this.label5);
             this.guna2GradientPanel7.FillColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -689,8 +635,8 @@
             this.guna2GradientPanel6.Controls.Add(this.pictureBox3);
             this.guna2GradientPanel6.Controls.Add(this.label3);
             this.guna2GradientPanel6.Controls.Add(this.lblFemale);
-            this.guna2GradientPanel6.Controls.Add(this.lblFemaleCount);
-            this.guna2GradientPanel6.Controls.Add(this.lblMaleCount);
+            this.guna2GradientPanel6.Controls.Add(this.lblFemaleNum);
+            this.guna2GradientPanel6.Controls.Add(this.lblMaleNum);
             this.guna2GradientPanel6.Controls.Add(this.lblMale);
             this.guna2GradientPanel6.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2GradientPanel6.FillColor2 = System.Drawing.Color.Lavender;
@@ -727,7 +673,7 @@
             this.guna2GradientPanel5.BorderThickness = 5;
             this.guna2GradientPanel5.Controls.Add(this.pictureBox2);
             this.guna2GradientPanel5.Controls.Add(this.lblInactivestudents);
-            this.guna2GradientPanel5.Controls.Add(this.lblInactivestudentscount);
+            this.guna2GradientPanel5.Controls.Add(this.lblInactiveNum);
             this.guna2GradientPanel5.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.Lavender;
             this.guna2GradientPanel5.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
@@ -753,7 +699,7 @@
             this.guna2GradientPanel4.BorderThickness = 5;
             this.guna2GradientPanel4.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel4.Controls.Add(this.lblActivestudents);
-            this.guna2GradientPanel4.Controls.Add(this.lblActivestudentsCount);
+            this.guna2GradientPanel4.Controls.Add(this.lblActiveNum);
             this.guna2GradientPanel4.FillColor = System.Drawing.SystemColors.ButtonHighlight;
             this.guna2GradientPanel4.FillColor2 = System.Drawing.Color.Lavender;
             this.guna2GradientPanel4.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
@@ -775,35 +721,13 @@
             // btnClosewindow
             // 
             this.btnClosewindow.Image = global::EVEDRI1.Properties.Resources.Close_Window;
-            this.btnClosewindow.Location = new System.Drawing.Point(1336, 18);
+            this.btnClosewindow.Location = new System.Drawing.Point(1326, 20);
             this.btnClosewindow.Name = "btnClosewindow";
             this.btnClosewindow.Size = new System.Drawing.Size(30, 30);
             this.btnClosewindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnClosewindow.TabIndex = 11;
             this.btnClosewindow.TabStop = false;
             this.btnClosewindow.Click += new System.EventHandler(this.btnClosewindow_Click);
-            // 
-            // btnMaximize
-            // 
-            this.btnMaximize.Image = global::EVEDRI1.Properties.Resources.Maximize_Window;
-            this.btnMaximize.Location = new System.Drawing.Point(1286, 18);
-            this.btnMaximize.Name = "btnMaximize";
-            this.btnMaximize.Size = new System.Drawing.Size(30, 30);
-            this.btnMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMaximize.TabIndex = 12;
-            this.btnMaximize.TabStop = false;
- 
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::EVEDRI1.Properties.Resources.Minimize_Window;
-            this.btnMinimize.Location = new System.Drawing.Point(1235, 18);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(30, 30);
-            this.btnMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnMinimize.TabIndex = 13;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // guna2GradientPanel10
             // 
@@ -868,14 +792,12 @@
             // 
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel2.BorderRadius = 30;
-            this.guna2GradientPanel2.Controls.Add(this.btnActivestudent);
-            this.guna2GradientPanel2.Controls.Add(this.btnInactivestudent);
+            this.guna2GradientPanel2.Controls.Add(this.lblName);
+            this.guna2GradientPanel2.Controls.Add(this.lblProfPathHolder);
+            this.guna2GradientPanel2.Controls.Add(this.btnActive);
+            this.guna2GradientPanel2.Controls.Add(this.btnInactive);
             this.guna2GradientPanel2.Controls.Add(this.btnLogs);
-            this.guna2GradientPanel2.Controls.Add(this.pnlsettings);
-            this.guna2GradientPanel2.Controls.Add(this.btnUpload);
-            this.guna2GradientPanel2.Controls.Add(this.lblUserfulname);
-            this.guna2GradientPanel2.Controls.Add(this.txtPicture);
-            this.guna2GradientPanel2.Controls.Add(this.picUser);
+            this.guna2GradientPanel2.Controls.Add(this.pcbProfile);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.RoyalBlue;
             this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
@@ -884,56 +806,67 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(282, 623);
             this.guna2GradientPanel2.TabIndex = 18;
             // 
-            // btnActivestudent
+            // lblProfPathHolder
             // 
-            this.btnActivestudent.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnActivestudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnActivestudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnActivestudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnActivestudent.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnActivestudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnActivestudent.FillColor = System.Drawing.Color.Transparent;
-            this.btnActivestudent.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnActivestudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActivestudent.ForeColor = System.Drawing.Color.White;
-            this.btnActivestudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btnActivestudent.HoverState.FillColor = System.Drawing.Color.Lavender;
-            this.btnActivestudent.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.btnActivestudent.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnActivestudent.Image = global::EVEDRI1.Properties.Resources.file_check;
-            this.btnActivestudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnActivestudent.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnActivestudent.Location = new System.Drawing.Point(0, 336);
-            this.btnActivestudent.Name = "btnActivestudent";
-            this.btnActivestudent.Size = new System.Drawing.Size(285, 87);
-            this.btnActivestudent.TabIndex = 1;
-            this.btnActivestudent.Text = "Active Student";
-            this.btnActivestudent.Click += new System.EventHandler(this.btnActivestudent_Click);
+            this.lblProfPathHolder.AutoSize = true;
+            this.lblProfPathHolder.ForeColor = System.Drawing.Color.White;
+            this.lblProfPathHolder.Location = new System.Drawing.Point(109, 176);
+            this.lblProfPathHolder.Name = "lblProfPathHolder";
+            this.lblProfPathHolder.Size = new System.Drawing.Size(58, 13);
+            this.lblProfPathHolder.TabIndex = 20;
+            this.lblProfPathHolder.Text = "ProfilePath";
             // 
-            // btnInactivestudent
+            // btnActive
             // 
-            this.btnInactivestudent.BackColor = System.Drawing.Color.RoyalBlue;
-            this.btnInactivestudent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnInactivestudent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnInactivestudent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnInactivestudent.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnInactivestudent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnInactivestudent.FillColor = System.Drawing.Color.Transparent;
-            this.btnInactivestudent.FillColor2 = System.Drawing.Color.Transparent;
-            this.btnInactivestudent.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInactivestudent.ForeColor = System.Drawing.Color.White;
-            this.btnInactivestudent.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.btnInactivestudent.HoverState.FillColor = System.Drawing.Color.Lavender;
-            this.btnInactivestudent.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
-            this.btnInactivestudent.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnInactivestudent.Image = global::EVEDRI1.Properties.Resources.document;
-            this.btnInactivestudent.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnInactivestudent.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnInactivestudent.Location = new System.Drawing.Point(0, 423);
-            this.btnInactivestudent.Name = "btnInactivestudent";
-            this.btnInactivestudent.Size = new System.Drawing.Size(285, 87);
-            this.btnInactivestudent.TabIndex = 2;
-            this.btnInactivestudent.Text = "Inactive Student";
+            this.btnActive.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnActive.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnActive.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnActive.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnActive.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnActive.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnActive.FillColor = System.Drawing.Color.Transparent;
+            this.btnActive.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnActive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActive.ForeColor = System.Drawing.Color.White;
+            this.btnActive.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnActive.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnActive.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnActive.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnActive.Image = global::EVEDRI1.Properties.Resources.file_check;
+            this.btnActive.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnActive.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnActive.Location = new System.Drawing.Point(0, 336);
+            this.btnActive.Name = "btnActive";
+            this.btnActive.Size = new System.Drawing.Size(285, 87);
+            this.btnActive.TabIndex = 1;
+            this.btnActive.Text = "Active Student";
+            this.btnActive.Click += new System.EventHandler(this.btnActive_Click);
+            // 
+            // btnInactive
+            // 
+            this.btnInactive.BackColor = System.Drawing.Color.RoyalBlue;
+            this.btnInactive.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnInactive.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnInactive.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInactive.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnInactive.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnInactive.FillColor = System.Drawing.Color.Transparent;
+            this.btnInactive.FillColor2 = System.Drawing.Color.Transparent;
+            this.btnInactive.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInactive.ForeColor = System.Drawing.Color.White;
+            this.btnInactive.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.btnInactive.HoverState.FillColor = System.Drawing.Color.Lavender;
+            this.btnInactive.HoverState.FillColor2 = System.Drawing.Color.RoyalBlue;
+            this.btnInactive.HoverState.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnInactive.Image = global::EVEDRI1.Properties.Resources.document;
+            this.btnInactive.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnInactive.ImageSize = new System.Drawing.Size(40, 40);
+            this.btnInactive.Location = new System.Drawing.Point(0, 423);
+            this.btnInactive.Name = "btnInactive";
+            this.btnInactive.Size = new System.Drawing.Size(285, 87);
+            this.btnInactive.TabIndex = 2;
+            this.btnInactive.Text = "Inactive Student";
+            this.btnInactive.Click += new System.EventHandler(this.btnInactive_Click);
             // 
             // btnLogs
             // 
@@ -961,35 +894,18 @@
             this.btnLogs.Text = "Logs";
             this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
             // 
-            // btnUpload
+            // pcbProfile
             // 
-            this.btnUpload.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUpload.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUpload.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUpload.FillColor = System.Drawing.Color.White;
-            this.btnUpload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnUpload.ForeColor = System.Drawing.Color.White;
-            this.btnUpload.Image = global::EVEDRI1.Properties.Resources.upload;
-            this.btnUpload.Location = new System.Drawing.Point(173, 129);
-            this.btnUpload.Name = "btnUpload";
-            this.btnUpload.Size = new System.Drawing.Size(37, 39);
-            this.btnUpload.TabIndex = 6;
-            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
-            // 
-            // picUser
-            // 
-            this.picUser.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.picUser.BorderRadius = 5;
-            this.picUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.picUser.Image = global::EVEDRI1.Properties.Resources.Minimalist_Avatar___Illustration_on_Behance;
-            this.picUser.ImageRotate = 0F;
-            this.picUser.Location = new System.Drawing.Point(65, 31);
-            this.picUser.Name = "picUser";
-            this.picUser.Size = new System.Drawing.Size(145, 137);
-            this.picUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picUser.TabIndex = 5;
-            this.picUser.TabStop = false;
+            this.pcbProfile.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.pcbProfile.BorderRadius = 5;
+            this.pcbProfile.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pcbProfile.ImageRotate = 0F;
+            this.pcbProfile.Location = new System.Drawing.Point(65, 31);
+            this.pcbProfile.Name = "pcbProfile";
+            this.pcbProfile.Size = new System.Drawing.Size(145, 137);
+            this.pcbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbProfile.TabIndex = 5;
+            this.pcbProfile.TabStop = false;
             // 
             // guna2GradientPanel3
             // 
@@ -1057,7 +973,6 @@
             this.btnDashboard.Size = new System.Drawing.Size(281, 87);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // Dashboard
             // 
@@ -1072,7 +987,6 @@
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dashboard";
-            this.pnlsettings.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.guna2GradientPanel9.ResumeLayout(false);
@@ -1092,74 +1006,61 @@
             this.guna2GradientPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClosewindow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
             this.guna2GradientPanel10.ResumeLayout(false);
             this.guna2GradientPanel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbProfile)).EndInit();
             this.guna2GradientPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        public System.Windows.Forms.Label lblBeedCount;
+        public System.Windows.Forms.Label lblBeedNum;
         private System.Windows.Forms.Label lblBeed;
-        public System.Windows.Forms.Label lblBstmCount;
+        public System.Windows.Forms.Label lblBstmNum;
         private System.Windows.Forms.Label lblBstm;
-        public System.Windows.Forms.Label lblBsitCount;
+        public System.Windows.Forms.Label lblBsitNum;
         private System.Windows.Forms.Label lblBsit;
-        public System.Windows.Forms.Label lblBaseballCount;
+        public System.Windows.Forms.Label lblBaseballNum;
         private System.Windows.Forms.Label lblBaseball;
-        public System.Windows.Forms.Label lblSoccerCount;
+        public System.Windows.Forms.Label lblSoccerNum;
         private System.Windows.Forms.Label lblSoccer;
-        public System.Windows.Forms.Label lblBasketballCount;
+        public System.Windows.Forms.Label lblBasketballNum;
         private System.Windows.Forms.Label lblBasketball;
-        public System.Windows.Forms.Label lblTennisCount;
+        public System.Windows.Forms.Label lblTennisNum;
         private System.Windows.Forms.Label lblTennis;
-        public System.Windows.Forms.Label lblVolleyballCount;
+        public System.Windows.Forms.Label lblVolleyballNum;
         private System.Windows.Forms.Label lblVolleyball;
-        public System.Windows.Forms.Label lblRedCount;
         private System.Windows.Forms.Label lblRed;
-        public System.Windows.Forms.Label lblYellowCount;
         private System.Windows.Forms.Label lblYellow;
-        public System.Windows.Forms.Label lblBlueCount;
         private System.Windows.Forms.Label lblBlue;
-        public System.Windows.Forms.Label lblOrangeCount;
         private System.Windows.Forms.Label lblOrange;
-        public System.Windows.Forms.Label lblFemaleCount;
-        public System.Windows.Forms.Label lblMaleCount;
+        public System.Windows.Forms.Label lblFemaleNum;
+        public System.Windows.Forms.Label lblMaleNum;
         private System.Windows.Forms.Label lblFemale;
         private System.Windows.Forms.Label lblMale;
-        public System.Windows.Forms.Label lblInactivestudentscount;
+        public System.Windows.Forms.Label lblInactiveNum;
         public System.Windows.Forms.Label lblInactivestudents;
-        public System.Windows.Forms.Label lblActivestudentsCount;
+        public System.Windows.Forms.Label lblActiveNum;
         public System.Windows.Forms.Label lblActivestudents;
         private System.Windows.Forms.Timer Sidebartranstion;
-        private System.Windows.Forms.PictureBox btnMinimize;
-        private System.Windows.Forms.PictureBox btnMaximize;
         private System.Windows.Forms.PictureBox btnClosewindow;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.Label lblBadmintonCount;
+        public System.Windows.Forms.Label lblBadmintonNum;
         private System.Windows.Forms.Label lblBadminton;
-        private Guna.UI2.WinForms.Guna2GradientButton btnInactivestudent;
+        private Guna.UI2.WinForms.Guna2GradientButton btnInactive;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogs;
-        private Guna.UI2.WinForms.Guna2GradientButton btnActivestudent;
+        private Guna.UI2.WinForms.Guna2GradientButton btnActive;
         private Guna.UI2.WinForms.Guna2GradientButton btnLogout;
-        private System.Windows.Forms.TextBox txtPicture;
-        private System.Windows.Forms.FlowLayoutPanel pnlsettings;
-        private Guna.UI2.WinForms.Guna2Button btnCLose;
-        private Guna.UI2.WinForms.Guna2Button btnfromafile;
-        private Guna.UI2.WinForms.Guna2Button btnUpload;
-        private System.Windows.Forms.Label lblUserfulname;
-        public Guna.UI2.WinForms.Guna2PictureBox picUser;
+        private System.Windows.Forms.Label lblName;
+        public Guna.UI2.WinForms.Guna2PictureBox pcbProfile;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2GradientButton btnDashboard;
@@ -1178,5 +1079,11 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnAddstudent;
+        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Label lblProfPathHolder;
+        private System.Windows.Forms.Label lblRedNum;
+        private System.Windows.Forms.Label lblYellowNum;
+        private System.Windows.Forms.Label lblBlueNum;
+        private System.Windows.Forms.Label lblOrangeNum;
     }
 }

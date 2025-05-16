@@ -18,6 +18,7 @@ namespace EVEDRI1
     public partial class Login : Form
     {
         Dashboard d = new Dashboard();
+        Mylogs logs = new Mylogs();
         public Login()
         {
             InitializeComponent();
@@ -39,8 +40,7 @@ namespace EVEDRI1
             ///panel1.MouseDown += Login_MouseDown;
             //guna2GradientPanel1.MouseDown += Login_MouseDown;
 
-            Mylogs mylogs = new Mylogs();
-            mylogs.insertlog("user", "message");
+           
            
         }
 
@@ -122,40 +122,57 @@ namespace EVEDRI1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Workbook workbook = new Workbook();
-            workbook.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx"); //Change file location
-            Worksheet sheet = workbook.Worksheets[0];
+            Mylogs logs = new Mylogs();
+            logs.insertLog(Props.CurrentUser, "Clicked the Login Button.");
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+            Worksheet sheet = book.Worksheets[0];
+
+            if (txtUsername.Text.Length == 0)
+            {
+                MessageBox.Show("Please input a username.");
+            }
+            else
+            {
+                if (txtPassword.Text.Length == 0)
+                {
+                    MessageBox.Show("Please input a password.");
+                }
+            }
+
+
             int row = sheet.Rows.Length;
-            bool login = false;
+            bool log = false;
 
             for (int i = 2; i <= row; i++)
             {
-                if (sheet.Range[i,11].Value == txtUsername.Text && sheet.Range[i, 12].Value == txtPassword.Text)
+                if (sheet.Range[i, 9].Value == txtUsername.Text && sheet.Range[i, 10].Value == txtPassword.Text)
                 {
-                    d.picUser.Image = Image.FromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Profiles\Minimalist Avatar - Illustration on Behance.jpg" + sheet.Range[i,14].Value);
-                       d.picUser.SizeMode = PictureBoxSizeMode.StretchImage;
-                    login = true;
+                    log = true;
+                    Form1 frm1 = new Form1();
+                    Props.CurrentUser = txtUsername.Text;
+                    Props.DisplayName = sheet.Range[i, 1].Value;
+                    Props.ProfilePath = sheet.Range[i, 14].Value;
                     break;
                 }
                 else
                 {
-                    login = false;
+                    log = false;
 
                 }
             }
-
-            if (login == true)
+            if (log == true)
             {
-                /*Form1 form = new Form1();
-                form.Show();*/
+
+                MessageBox.Show("Successfully logged in.", "", MessageBoxButtons.OK);
                 Dashboard dashboard = new Dashboard();
-                dashboard.Show();
                 this.Hide();
+                dashboard.Show();
 
             }
             else
             {
-                MessageBox.Show("Your entered incorrect username or password, please try again!");
+                MessageBox.Show("Incorrect username or password.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -188,29 +205,11 @@ namespace EVEDRI1
            this.WindowState = FormWindowState.Minimized;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblSignin_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

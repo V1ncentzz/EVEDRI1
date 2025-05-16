@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Management.Instrumentation;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,271 +18,232 @@ namespace EVEDRI1
 {
     public partial class Form2 : Form
     {
-        
-        Workbook book = new Workbook();
+        Dashboard dashboard;
         public Form2()
         {
+            dashboard = new Dashboard();
             InitializeComponent();
-           
-            LoadExcelFile();
-            //ShowStudents("Status =");
+            LoadFileFromExcel();
+            dgvResult.ForeColor = Color.Black;
         }
-        
-        public void LoadExcelFile()
-        {
-            //book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx"); //Change file location
-            //Worksheet sheet = book.Worksheets[0];
-            //DataTable dt = sheet.ExportDataTable();
-            //dataGridView1.DataSource = dt;
 
-            book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
+        public void LoadFileFromExcel()
+        {
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
             Worksheet sheet = book.Worksheets[0];
-            DataTable fullTable = sheet.ExportDataTable();
-            DataTable activeStudents = fullTable.Clone();
 
-            //foreach (DataRow row in fullTable.Rows)
-            //{
-            //    if (row[12].ToString() == "1") // 13th column = Status
-            //    {
-            //        activeStudents.ImportRow(row);
-            //    }
-            //}
-
-            dataGridView1.DataSource = activeStudents;
-
-
+            DataTable dt = new DataTable();
+            dt = sheet.ExportDataTable();
+            dgvResult.DataSource = dt;
         }
-        
-        //public void ShowStudents(string status)
-        //{
-        //    book.LoadFromFile(@"C:\Users\ACT-STUDENT\source\repos\EVEDRI1\Book1.xlsx");
-        //    Worksheet worksheet = book.Worksheets[0];
-        //    DataTable dt = worksheet.ExportDataTable();
-        //    //DataRow[] rows = dt.Select("Status=" + status);
 
-        //    //foreach (DataRow i in rows)
-        //    //{
-        //    //    dataGridView1.Rows.Insert([0]
-        //    //}
-        //}
-
-
-
-        public void Insert(string name, string gender, string hobbies, string birthday, string age, string favcolor, 
-        string course, string address, string saying, string email, 
-        string username, string password)
+        public void UpdateToExcel(int ID, string name, string gender, string sports, string address, string email, string birthday, string age, string favColor, string user, string pass, string saying, string course, string status, string profile)
         {
-            int row = dataGridView1.Rows.Add();
-            dataGridView1.Rows[row].Cells[0].Value = name;
-            dataGridView1.Rows[row].Cells[1].Value = gender;
-            dataGridView1.Rows[row].Cells[2].Value = hobbies;
-            dataGridView1.Rows[row].Cells[3].Value = birthday;
-            dataGridView1.Rows[row].Cells[4].Value = age;
-            dataGridView1.Rows[row].Cells[5].Value = favcolor;
-            dataGridView1.Rows[row].Cells[6].Value = course;
-            dataGridView1.Rows[row].Cells[7].Value = address;
-            dataGridView1.Rows[row].Cells[8].Value = saying;
-            dataGridView1.Rows[row].Cells[9].Value = email;
-            dataGridView1.Rows[row].Cells[10].Value = username;
-            dataGridView1.Rows[row].Cells[11].Value = password;
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+            Worksheet sheet = book.Worksheets[0];
+
+            int id = ID + 2;
+            sheet.Range[id, 1].Value = name;
+            sheet.Range[id, 2].Value = gender;
+            sheet.Range[id, 3].Value = sports;
+            sheet.Range[id, 4].Value = address;
+            sheet.Range[id, 5].Value = email;
+            sheet.Range[id, 6].Value = birthday;
+            sheet.Range[id, 7].Value = age;
+            sheet.Range[id, 8].Value = favColor;
+            sheet.Range[id, 9].Value = user;
+            sheet.Range[id, 10].Value = pass;
+            sheet.Range[id, 11].Value = saying;
+            sheet.Range[id, 12].Value = course;
+            sheet.Range[id, 13].Value = status;
+            sheet.Range[id, 14].Value = profile;
+
+            book.SaveToFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+
+            int dgvIndex = ID;
+            dgvResult.Rows[dgvIndex].Cells[0].Value = name;
+            dgvResult.Rows[dgvIndex].Cells[1].Value = gender;
+            dgvResult.Rows[dgvIndex].Cells[2].Value = sports;
+            dgvResult.Rows[dgvIndex].Cells[3].Value = address;
+            dgvResult.Rows[dgvIndex].Cells[4].Value = email;
+            dgvResult.Rows[dgvIndex].Cells[5].Value = birthday;
+            dgvResult.Rows[dgvIndex].Cells[6].Value = age;
+            dgvResult.Rows[dgvIndex].Cells[7].Value = favColor;
+            dgvResult.Rows[dgvIndex].Cells[8].Value = user;
+            dgvResult.Rows[dgvIndex].Cells[9].Value = pass;
+            dgvResult.Rows[dgvIndex].Cells[10].Value = saying;
+            dgvResult.Rows[dgvIndex].Cells[11].Value = course;
+            dgvResult.Rows[dgvIndex].Cells[11].Value = status;
+
         }
 
-        public void Update(int id, string name, string gender, string hobbies, string birthday, string age, string favcolor, string course, 
-        string address, string saying, string email, 
-        string username, string password)
-        {
-            //int i = dataGridView1.Rows.Add();
-            dataGridView1.Rows[id].Cells[0].Value = name;
-            dataGridView1.Rows[id].Cells[1].Value = gender;
-            dataGridView1.Rows[id].Cells[2].Value = hobbies;
-            dataGridView1.Rows[id].Cells[3].Value = birthday;
-            dataGridView1.Rows[id].Cells[4].Value = age;
-            dataGridView1.Rows[id].Cells[5].Value = favcolor;
-            dataGridView1.Rows[id].Cells[6].Value = course;
-            dataGridView1.Rows[id].Cells[7].Value = address;
-            dataGridView1.Rows[id].Cells[8].Value = saying;
-            dataGridView1.Rows[id].Cells[9].Value = email;
-            dataGridView1.Rows[id].Cells[10].Value = username;
-            dataGridView1.Rows[id].Cells[11].Value = password;
-        }
+     
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            string searchVal = txtSearch.Text;
-            BindingSource bs = new BindingSource();
-            bs.DataSource = dataGridView1.DataSource;
-            string filterVal = searchVal.Replace("'", "''");
-            bs.Filter = $"Name LIKE '{filterVal}%'";
-            dataGridView1.DataSource = bs;
-           
+            Mylogs logs = new Mylogs();
+            logs.insertLog(Props.CurrentUser, "Searched in the active list.");
+            string searchText = txtSearch.Text.ToLower();
+            bool foundMatch = false;
 
-           
-        }
-
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            Form1 form1 = (Form1)Application.OpenForms["Form1"];
-            int r = dataGridView1.CurrentCell.RowIndex;
-            form1.txtName.Text = dataGridView1.Rows[r].Cells[0].Value.ToString();
-            form1.cbmCourse.Text = dataGridView1.Rows[r].Cells[6].Value.ToString();
-            form1.txtEmail.Text = dataGridView1.Rows[r].Cells[9].Value.ToString();
-            form1.txtAddress.Text = dataGridView1.Rows[r].Cells[7].Value.ToString();
-            form1.txtSaying.Text = dataGridView1.Rows[r].Cells[4].Value.ToString();
-            form1.cbmFavcolor.Text = dataGridView1.Rows[r].Cells[3].Value.ToString();
-            form1.txtUsername.Text = dataGridView1.Rows[r].Cells[10].Value.ToString();
-            form1.txtPassword.Text = dataGridView1.Rows[r].Cells[11].Value.ToString();
-            
-            form1.lblId.Text = r.ToString();
-            switch (dataGridView1.Rows[r].Cells[1].Value)
+            if (string.IsNullOrEmpty(txtSearch.Text))
             {
-                case "Male":
-                    form1.radMale.Checked = true;
-                    break;
-                default:
-                    form1.radFemale.Checked = true;
-                    break;
+                MessageBox.Show("Please enter the cell you want to search.", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+
+
+            foreach (DataGridViewRow row in dgvResult.Rows)
             {
-                if (!row.IsNewRow)
+                foreach (DataGridViewCell cell in row.Cells)
                 {
-                    string cellValue = row.Cells[2].Value?.ToString();
-                    if (!string.IsNullOrEmpty(cellValue))
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Split(' ').Contains(searchText))
                     {
-                        string[] lines = cellValue.Split(' ');
-
-                        foreach (string line in lines)
-                        {
-                            if (line == "Volleyball")
-                            {
-                                form1.chkVolleyball.Checked = true;
-                            }
-                            if (line == "Basketball")
-                            {
-                                form1.chkBasketball.Checked = true;
-                            }
-                            if (line == "Badminton")
-                            {
-                                form1.chkBadminton.Checked = true;
-                            }
-                            if (line == "Tennis")
-                            {
-                                form1.chkTennis.Checked = true;
-                            }
-                            if (line == "Soccer")
-                            {
-                                form1.chkSoccer.Checked = true;
-                            }
-                            if (line == "Baseball")
-                            {
-                                form1.chkBaseball.Checked = true;
-                            }
-
-
-                        }
+                        cell.Style.BackColor = Color.Yellow;
+                        foundMatch = true;
+                    }
+                    else
+                    {
+                        cell.Style.BackColor = dgvResult.DefaultCellStyle.BackColor;
                     }
                 }
             }
-            this.Hide();
+
+            if (foundMatch)
+            {
+                MessageBox.Show("Matching cells have been highlighted.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("No matching cells found.", "Search Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = txtSearch.Text.ToLower();
+
+            foreach (DataGridViewRow row in dgvResult.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    cell.Style.BackColor = dgvResult.DefaultCellStyle.BackColor;
+                }
+            }
+        }
+
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
             form1.Show();
-            form1.btnUpdate.Visible = true;
-            form1.btnDisplayall.Visible = false;
-            form1.btnAdddata.Visible = false;
+            this.Hide();
+            
         }
 
-        //private void btnDelete_Click(object sender, EventArgs e)
-        //{
-        //    int selectedRow = dataGridView1.CurrentCell.RowIndex;
-        //    Worksheet sheet = book.Worksheets[0];
-        //    sheet.Range[selectedRow + 2, 13].Value = "0"; // Set status to inactive
-        //    book.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
-        //    LoadActiveStudents();
-
-        //    //Worksheet sheet = book.Worksheets[0];
-        //    //DataTable dt = sheet.ExportDataTable();
-        //    //dataGridView1.DataSource = dt;
-        //    //int row = sheet.Rows.Length;
-        //    //sheet.DeleteRow(row);
-        //    //foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-        //    //{
-        //    //    dataGridView1.Rows.Remove(row);
-        //    //}
-        //}
-
-        private void LoadActiveStudents()
+        private void lblReturnHome_Click(object sender, EventArgs e)
         {
-            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
-            Worksheet sheet = book.Worksheets[0];
-            DataTable dt = sheet.ExportDataTable();
-            DataView dv = dt.DefaultView;
-            dv.RowFilter = "F13 = '1'"; // Assuming F13 is "Status"
-            dataGridView1.DataSource = dv.ToTable();
-        }
-        
-
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+          
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
         }
 
-        private void btnExport_Click(object sender, EventArgs e)
+        public void MoveStudentBetweenSheets(int fromSheetIndex, int toSheetIndex, int rowIndexToMove)
         {
-            //Workbook book = new Workbook();
-            //book.LoadFromFile(@"C:\Users\\ACT-STUDENT\\Desktop\\Book1");
-            //Worksheet sheet = book.Worksheets[0];
-            //int row = sheet.Rows.Length;
-            //for (int i = 0; i <)
-        }
 
-        private void lblSearch_Click(object sender, EventArgs e)
-        {
+            Workbook book = new Workbook();
+            book.LoadFromFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx");
+
+            Worksheet fromSheet = book.Worksheets[fromSheetIndex];
+            Worksheet toSheet = book.Worksheets[toSheetIndex];
+
+            int lastRow = toSheet.LastRow + 1;
+
+            for (int col = 1; col <= fromSheet.LastColumn; col++)
+            {
+                var value = fromSheet.Range[rowIndexToMove + 2, col].Value ?? string.Empty;
+
+
+                if (col == 13)
+                {
+                    value = (toSheetIndex == 0) ? "1" : "0";
+
+                }
+                toSheet.Range[lastRow, col].Text = value.ToString();
+            }
+
+            fromSheet.DeleteRow(rowIndexToMove + 2);
+
+            book.SaveToFile(@"C:\Users\HF\Desktop\Main\Book1.xlsx", ExcelVersion.Version2016);
+            MessageBox.Show("The student has been successfully transferred!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
         }
 
-        //private void Form2_Load(object sender, EventArgs e)
-        //{
-
-        //}
-
-        private void btnClosewindow_Click(object sender, EventArgs e)
+        private void InactiveStud_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Mylogs logs = new Mylogs();
+            logs.insertLog(Props.CurrentUser, "Deleted a Student.");
+            DialogResult result = MessageBox.Show("Are you sure you want to move this student?", "WARNING", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                if (dgvResult.CurrentRow != null)
+                {
+                    int selectedRowIndex = dgvResult.CurrentRow.Index;
+
+
+                    MoveStudentBetweenSheets(0, 1, selectedRowIndex);
+                    LoadFileFromExcel();
+                    Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault();
+                    if (form3 != null)
+                    {
+                        form3.LoadFileFromExcelInactive();
+                    }
+                    
+                    //logs.insertLog(Props.CurrentUser, "Transferred a active student to the inactive list.");
+                }
+            }
         }
 
-        private void btnDeteteRow_Click(object sender, EventArgs e)
+        private void dgvResult_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int selectedRowIndex = dataGridView1.CurrentCell.RowIndex;
+            
 
-            // Load Excel
-            book.LoadFromFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx");
-            Worksheet sheet = book.Worksheets[0];
+                Dashboard dashboard = new Dashboard();
 
-            // Update the status to 0
-            sheet.Range[selectedRowIndex + 2, 13].Value = "0"; // Set Status to Inactive (row + 2 for Excel index)
+                int r = dgvResult.CurrentCell.RowIndex;
+                Form1 frm1 = new Form1();
+                frm1.lblId.Text = r.ToString();
+                string name = dgvResult.Rows[r].Cells[0].Value.ToString();
+                string gender = dgvResult.Rows[r].Cells[1].Value.ToString();
+                string sports = dgvResult.Rows[r].Cells[2].Value.ToString();
+                string address = dgvResult.Rows[r].Cells[3].Value.ToString();
+                string email = dgvResult.Rows[r].Cells[4].Value.ToString();
+                string birthday = dgvResult.Rows[r].Cells[5].Value.ToString();
+                string age = dgvResult.Rows[r].Cells[6].Value.ToString();
+                string favColor = dgvResult.Rows[r].Cells[7].Value.ToString();
+                string user = dgvResult.Rows[r].Cells[8].Value.ToString();
+                string pass = dgvResult.Rows[r].Cells[9].Value.ToString();
+                string saying = dgvResult.Rows[r].Cells[10].Value.ToString();
+                string course = dgvResult.Rows[r].Cells[11].Value.ToString();
+                string status = dgvResult.Rows[r].Cells[12].Value.ToString();
+                string profile = dgvResult.Rows[r].Cells[13].Value.ToString();
 
-            book.SaveToFile(@"C:\Users\HF\Documents\Ff\Book1.xlsx", ExcelVersion.Version2016);
 
-            MessageBox.Show("Student marked as inactive.");
-            LoadExcelFile(); // Refresh
 
-            //    Worksheet sheet = book.Worksheets[0];
-            //    DataTable dt = sheet.ExportDataTable();
-            //    dataGridView1.DataSource = dt;
-            //    int row = sheet.Rows.Length;
-            //    sheet.DeleteRow(row);
-            //    foreach (DataGridViewRow row in dataGridView1.SelectedRows)
-            //    {
-            //        dataGridView1.Rows.Remove(row);
-            //    }
-        }
+                frm1.UpdateTextFields(r, name, gender, sports, address, email, birthday, age, favColor, user, pass, saying, course, status, profile);
+                frm1.btnAdd.Visible = false;
+                frm1.btnBrowse.Visible = false;
+                frm1.lblProfile.Visible = false;
+                frm1.txtProfilePath.Visible = false;
+                frm1.btnUpdate.Visible = true;
+                frm1.Show();
+                this.Hide();
 
-            private void btnInactive_Click(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.Close();
         }
     }
 }
